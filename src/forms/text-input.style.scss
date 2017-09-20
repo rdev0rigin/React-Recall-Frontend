@@ -1,0 +1,12 @@
+.text-input-component {
+  .hidden {
+    display: none;
+  }
+
+  .input-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+  }
+}

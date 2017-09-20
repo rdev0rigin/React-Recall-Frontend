@@ -4,5 +4,6 @@ body {
   font-family: sans-serif;
 }
 
+@import './forms/text-input.style';
 @import './main/app.style';
 @import './create-deck/deck-list.style';

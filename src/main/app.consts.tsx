@@ -1,7 +1,9 @@
+
 export const InitialState = {
 	signedIn: false,
 	user: null,
 	gapiReady: false,
+	decks: [],
 };
 
 

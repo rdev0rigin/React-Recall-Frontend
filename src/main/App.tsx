@@ -7,6 +7,8 @@ import {RecallState} from './app.consts';
 import {SignInComponent} from '../sign-in/sign-in.component';
 import {loadGapi} from '../services/gapi.service';
 import {DeckListsComponent} from '../create-deck/deck-list.component';
+import {SplashComponent} from './splash.component';
+import {CreateDeckComponent} from '../create-deck/create-deck.component';
 
 class App extends React.Component {
 	public state: RecallState;
@@ -53,7 +55,7 @@ class App extends React.Component {
 				exact
 				path={'/'}
 				render={() => {
-					return <NavbarComponent signedIn={this.state.signedIn} />
+					return <SplashComponent/>
 					}
 				}
 			/>
@@ -65,6 +67,12 @@ class App extends React.Component {
 				path={'/choose-deck'}
 				render={() => {
 					return <DeckListsComponent/>
+				}}
+			/>
+			<Route
+				path={'/create-deck'}
+				render={() => {
+					return <CreateDeckComponent />
 				}}
 			/>
 		</div>
