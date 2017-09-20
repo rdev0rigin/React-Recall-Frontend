@@ -1,0 +1,23 @@
+.deck-list-component {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  .deck-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .deck-item {
+    background: grey;
+    border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    .deck-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
+  }
+}

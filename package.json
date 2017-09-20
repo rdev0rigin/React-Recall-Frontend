@@ -1,0 +1,41 @@
+{
+  "name": "recall-2",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@types/react-router-dom": "^4.0.7",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "react-router": "^4.2.0",
+    "react-router-dom": "^4.2.2",
+    "react-scripts-ts": "2.7.0",
+    "redux": "^3.7.2",
+    "rxjs-es": "5.0.0-beta.12",
+    "socket.io-client": "^2.0.3"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^2.8.7",
+    "@types/gapi": "^0.0.35",
+    "@types/gapi.auth2": "^0.0.44",
+    "@types/jest": "^20.0.8",
+    "@types/node": "^8.0.28",
+    "@types/react": "^16.0.5",
+    "@types/react-dom": "^15.5.4",
+    "@types/react-router": "^4.0.15",
+    "@types/react-test-renderer": "^15.5.4",
+    "@types/rx": "^4.1.1",
+    "@types/socket.io-client": "^1.4.30",
+    "enzyme": "^2.9.1",
+    "enzyme-to-json": "^1.6.0",
+    "react-addons-test-utils": "^15.6.0",
+    "react-test-render": "^1.0.3",
+    "react-test-renderer": "^15.6.1",
+    "ts-jest": "^21.0.1"
+  }
+}

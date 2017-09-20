@@ -1,0 +1,44 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .top-toolbar {
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .center-row {
+    .side-navbar {
+      background: lightgrey;
+      position: fixed;
+      margin-top: 100px;
+      left: 0;
+      height: 100%;
+      width: 100px;
+      .navbar-container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+      }
+    }
+
+    .main-display {
+      margin-top: 100px;
+      margin-left: 100px;
+    }
+  }
+
+  .footer {
+    position: fixed;
+    bottom: 0;
+    height: 100px;
+    width: 100vw;
+  }
+}
