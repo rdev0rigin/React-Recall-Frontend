@@ -1,0 +1,15 @@
+.create-deck-component {
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+
+  .create-deck-form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    line-height: 2;
+  }
+}

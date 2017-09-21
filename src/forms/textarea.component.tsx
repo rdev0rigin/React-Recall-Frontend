@@ -5,13 +5,13 @@ const initialState  = {
 	model: ''
 };
 
-export interface TextInputState {
-		active: boolean;
-		model: string;
+export interface TextareaState {
+	active: boolean;
+	model: string;
 }
 
-export class TextInputComponent extends React.Component {
-	public state: TextInputState;
+export class TextareaComponent extends React.Component {
+	public state: TextareaState;
 	constructor(
 		public props: {
 			initialValue: string;
@@ -22,7 +22,6 @@ export class TextInputComponent extends React.Component {
 		this.state = initialState;
 		this.visibilityToggle = this.visibilityToggle.bind(this);
 		this.onValueChange = this.onValueChange.bind(this);
-		this.onCancel = this.onCancel.bind(this);
 	}
 
 	public componentDidMount(): void {
@@ -49,20 +48,19 @@ export class TextInputComponent extends React.Component {
 		return(
 			<div className={'text-input-component'}>
 				<strong
-			        onClick={this.visibilityToggle}
-					className={this.state.active ? 'hidden' : 'label'}
+					onClick={this.visibilityToggle}
+					className={this.state.active ? 'hidden' : ''}
 				>
 					{this.state.model}
 				</strong>
 				<div
 					className={this.state.active ? 'input-container' : 'hidden'}
 				>
-					<input
+					<textarea
 						value={this.state.model}
 						onChange={this.onValueChange}
-					/>
+					></textarea>
 					<div onClick={this.visibilityToggle}>Save</div>
-					/
 					<div onClick={this.onCancel}>Cancel</div>
 				</div>
 			</div>

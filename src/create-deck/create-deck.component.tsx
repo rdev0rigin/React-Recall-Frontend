@@ -1,15 +1,18 @@
 import * as React from 'react';
 import {DeckListsComponent} from './deck-list.component';
 import {TextInputComponent} from '../forms/text-input.component';
+import {TextareaComponent} from '../forms/textarea.component';
 
 export class CreateDeckComponent extends React.Component {
 	private deckTitle: string = '';
+	private deckDescription: string = '';
 
 	constructor(
 		public props,
 	){
 		super(props);
 		this.deckTitleHandler = this.deckTitleHandler.bind(this);
+		this.deckDescriptionHandler = this.deckDescriptionHandler.bind(this);
 		this.saveHandler = this.saveHandler.bind(this);
 	}
 
@@ -31,10 +34,14 @@ export class CreateDeckComponent extends React.Component {
 		console.log(newValue);
 		this.deckTitle = newValue;
 	}
+	private deckDescriptionHandler(newValue): any {
+		console.log(newValue);
+		this.deckDescription = newValue;
+	}
 
 	render(){
 		return (
-			<div>
+			<div className={'create-deck-component'}>
 				<h3>Pick a Deck to Edit</h3>
 				<div className={'deck-list'}>
 					<DeckListsComponent/>
@@ -43,14 +50,22 @@ export class CreateDeckComponent extends React.Component {
 				<button>Create A New Deck</button>
 				<div className={'deck-editor'}>
 					Deck Details
-				<form>
-					<label>Title</label>
-					<TextInputComponent
-						valueHandler = {this.deckTitleHandler}
-						initialValue={'Initial Value'}
-					/>
-					<label>Description</label>
-					<textarea></textarea>
+				<form className={'create-deck-form'}>
+					<div className={'title-input'}>
+						<strong>Title</strong>
+						<TextInputComponent
+							valueHandler = {this.deckTitleHandler}
+							initialValue={'Initial Value'}
+						/>
+					</div>
+					<div>
+						<strong>Description</strong>
+						<TextareaComponent
+							valueHandler={this.deckDescriptionHandler}
+							initialValue={'Initial value'}
+						/>
+					</div>
+				</form>
 					<button>Add A Card</button>
 					<ul>
 						<li>
@@ -58,7 +73,6 @@ export class CreateDeckComponent extends React.Component {
 						</li>
 					</ul>
 					<button onClick={this.saveHandler}>Save</button>
-				</form>
 				</div>
 			</div>
 		)
