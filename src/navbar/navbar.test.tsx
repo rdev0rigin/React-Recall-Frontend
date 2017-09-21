@@ -4,7 +4,7 @@ import * as React from 'react';
 import { NavbarComponent } from './navbar.component';
 import { shallow } from 'enzyme';
 
-describe('Start Screen Tests', () => {
+describe('Navbar Tests', () => {
 
 	it('should render correctly', () => {
 		const tree = shallow(<NavbarComponent signedIn={false}/>);

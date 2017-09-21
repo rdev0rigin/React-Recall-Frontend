@@ -44,6 +44,7 @@ export function loadGapi(): Observable<boolean> {
 
 function signInHandler(isSignedIn): void {
 	if(isSignedIn){
+		console.log('signin handler called');
 		responseSocket(
 			'USER_SIGNED_IN',
 			{
@@ -57,12 +58,7 @@ function signInHandler(isSignedIn): void {
 			.subscribe(res =>{
 				RecallStore
 					.dispatch(
-						actionSignIn(
-							gapi.auth2
-								.getAuthInstance()
-								.currentUser
-								.get()['w3'].ig
-						)
+						actionSignIn(res)
 					);
 			});
 	}

@@ -2,8 +2,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: scroll;
-  overflow-x: visible;
   padding: 0 10px 0 20px;
 
   .deck-list {
@@ -13,7 +11,7 @@
   }
 
   .deck-item {
-    background: #f9f9f9;
+    background: #ffffff;
     //border: black solid 1px;
     display: flex;
     flex-direction: column;

@@ -1,5 +1,7 @@
 import * as React from 'react';
-import {DECKS, FlashCardDeck} from '../models/decks.model';
+import {FlashCardDeck} from '../models/decks.model';
+import {getDecks} from '../services/decks.service';
+import {RecallStore} from '../services/store.redux';
 
 interface state {
 	decks: FlashCardDeck[];
@@ -22,27 +24,29 @@ export class DeckListsComponent extends React.Component {
 	}
 
 	public componentDidMount(): void {
-		const decks = this.getAllDecks();
-		const userDecks = this.filterDecksByUserId('Rdev', decks);
-		this.setState({decks: decks, userDecks: userDecks});
-
+		getDecks()
+			.subscribe(decks => {
+				if(RecallStore.getState().signedIn){
+					const userDecks = this.filterDecksByUserId(RecallStore.getState().user.id, decks);
+					this.setState({decks: decks, userDecks: userDecks});
+				} else {
+					this.setState({decks: decks, userDecks: []});
+				}
+				RecallStore.dispatch({type: 'ALL_DECKS_FETCHED', decks: decks});
+		});
 	}
 
 	private filterDecksByUserId(userID: string, decks: FlashCardDeck[]){
-		return decks.filter(deck => deck.meta.authorId === userID);
-	}
-
-	private getAllDecks(): FlashCardDeck[] {
-		return DECKS('demo_array');
+		return decks.filter(deck => deck.authorId === userID);
 	}
 
 	render(): any {
 		return (
 			<div className={'deck-list-component'}>
 				<h3>User Decks</h3>
-				{decksList({decks: this.state.userDecks})}
+				{decksList({decks: this.state.userDecks, handler: this.props.clickHandler})}
 				<h3>All Decks</h3>
-				{decksList({decks: this.state.decks})}
+				{decksList({decks: this.state.decks, handler: this.props.clickHandler})}
 			</div>
 		)
 	}
@@ -52,19 +56,25 @@ export function decksList(props){
 	console.log('props', props);
 	const decks = props.decks;
 	const deckItems = decks.map(deck =>
-		<li className={'deck-item'} key={deck.meta.id.toString()}>
+		<li
+			onClick={() => {
+				props.handler(deck.id);
+			}}
+			className={'deck-item'}
+			key={deck.id.toString()}
+		>
 			<div className={'deck-title'}>
-				Title: {deck.meta.title}
+				Title: {deck.title}
 			</div>
 			<p className={'deck-description'}>
-				{deck.meta.description}
+				{deck.description}
 			</p>
 			<div className={'deck-footer'}>
 				<div className={'deck-footer-author'}>
-					made by: {deck.meta.authorName}
+					made by: {deck.authorName}
 				</div>
 				<div className={'deck-footer-date'}>
-					made on: {deck.meta.createdOn}
+					made on: {deck.createdOn}
 				</div>
 			</div>
 		</li>

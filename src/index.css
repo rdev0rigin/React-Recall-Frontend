@@ -18,7 +18,7 @@ button {
     transition: all 0.6s linear; }
 
 .main-container {
-  background: #fffbf8;
+  background: #f3f3f3;
   color: #585858;
   display: flex;
   flex-direction: column;
@@ -46,9 +46,11 @@ button {
       background: #d9d1ee;
       position: fixed;
       left: 0;
-      height: 100%;
+      top: 100px;
+      bottom: 100px;
       width: 100px; }
       .main-container .center-row .side-navbar .navbar-container {
+        height: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -60,8 +62,8 @@ button {
       overflow-y: scroll; }
   .main-container .footer {
     background: #d9d1ee;
+    box-shadow: -7px -7px 22px lightgray;
     position: fixed;
-    margin-left: 100px;
     bottom: 0;
     height: 100px;
     width: 100vw; }
@@ -114,15 +116,13 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  overflow-y: scroll;
-  overflow-x: visible;
   padding: 0 10px 0 20px; }
   .deck-list-component .deck-list {
     list-style: none;
     display: flex;
     flex-direction: column; }
   .deck-list-component .deck-item {
-    background: #f9f9f9;
+    background: #ffffff;
     display: flex;
     flex-direction: column;
     box-shadow: 7px 7px 22px lightgray; }
@@ -137,6 +137,8 @@ button {
   flex-direction: row;
   justify-content: flex-start; }
   .create-deck-component .editor {
+    background: white;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: center;

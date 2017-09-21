@@ -7,5 +7,5 @@ body {
 @import './main/app.style';
 @import './forms/text-input.style';
 @import './forms/textarea.style';
-@import './create-deck/deck-list.style';
-@import './create-deck/create-deck.style';
+@import 'decks/deck-list.style';
+@import 'decks/create-deck.style';

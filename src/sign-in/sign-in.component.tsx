@@ -42,9 +42,7 @@ export class SignInComponent extends React.Component {
 					ux_mode: 'popup'
 				})
 				.then((profileInfo: any) => {
-					console.log('response?');
-					console.log('current user?', gapi.auth2.getAuthInstance().currentUser.get());
-					console.log('profile?', profileInfo);
+					this.props.history.push('/');
 				})
 				.catch((res: any) => console.log('auth error', res));
 		}
@@ -53,10 +51,9 @@ export class SignInComponent extends React.Component {
 	render(){
 		return(
 			<div className={'sign-in-container'}>
-				{this.state.gapiReady ? 'Ready!' : 'Not Ready'}
 				<h1>Sign In</h1>
 				<form>
-					<button onClick={this.signInUpHandler}>Sign In With Google</button>
+					<button disabled={!this.state.gapiReady} onClick={this.signInUpHandler}>Sign In With Google</button>
 				</form>
 			</div>
 		)
