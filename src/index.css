@@ -4,33 +4,37 @@ body {
   font-family: sans-serif; }
 
 button {
-  background: transparent;
-  border: #ffd315 solid 1px;
-  border-radius: 1em;
-  color: #1c9aff;
+  background: #4e5eff;
+  border: none;
+  border-radius: .4em;
+  color: white;
   padding-top: 10px;
   padding-bottom: 10px;
+  box-shadow: 7px 7px 22px lightgray;
   transition: all 0.6s linear; }
   button:hover {
-    color: #ffd315;
-    border: #ffd315 solid 1px;
+    background: #4e5eff;
+    color: greenyellow;
     transition: all 0.6s linear; }
 
 .main-container {
-  background: #090c19;
-  color: white;
+  background: #fffbf8;
+  color: #585858;
   display: flex;
   flex-direction: column;
-  justify-content: space-between; }
+  justify-content: space-between;
+  height: 100vh;
+  width: 100vw; }
   .main-container .top-toolbar {
-    background: #222a31;
+    background: #d9d1ee;
     position: fixed;
     top: 0;
     width: 100vw;
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
+    justify-content: space-between;
+    box-shadow: 7px 7px 22px lightgray; }
   .main-container .center-row {
     display: flex;
     flex-direction: row;
@@ -39,7 +43,7 @@ button {
     padding-left: 100px;
     height: 100vh; }
     .main-container .center-row .side-navbar {
-      background: #222a31;
+      background: #d9d1ee;
       position: fixed;
       left: 0;
       height: 100%;
@@ -51,12 +55,11 @@ button {
         text-align: center; }
     .main-container .center-row .main-display {
       height: 100%;
-      margin-top: 100px;
-      margin-left: 100px;
+      width: 100%;
       overflow-x: hidden;
       overflow-y: scroll; }
   .main-container .footer {
-    background: #222a31;
+    background: #d9d1ee;
     position: fixed;
     margin-left: 100px;
     bottom: 0;
@@ -67,6 +70,7 @@ button {
   display: none; }
 .text-input-component .label {
   border: black solid 1px;
+  border-radius: 0.4em;
   padding: 5px;
   margin: 5px; }
 .text-input-component .input-container {
@@ -74,20 +78,54 @@ button {
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: center; }
+.text-input-component input {
+  width: 100%;
+  padding: 10px;
+  font-size: 23px;
+  background: transparent;
+  box-shadow: none;
+  border: black solid 1px;
+  border-radius: 0.4em;
+  text-align: center; }
+
+.textarea-component .hidden {
+  display: none; }
+.textarea-component .label {
+  border: black solid 1px;
+  border-radius: 0.4em;
+  padding: 5px;
+  margin: 5px; }
+.textarea-component .input-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: center; }
+.textarea-component textarea {
+  width: 100%;
+  padding: 10px;
+  font-size: 23px;
+  background: transparent;
+  box-shadow: none;
+  border: black solid 1px;
+  border-radius: 0.4em;
+  text-align: center; }
 
 .deck-list-component {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  justify-content: center;
+  overflow-y: scroll;
+  overflow-x: visible;
+  padding: 0 10px 0 20px; }
   .deck-list-component .deck-list {
     list-style: none;
     display: flex;
     flex-direction: column; }
   .deck-list-component .deck-item {
-    background: grey;
-    border: black solid 1px;
+    background: #f9f9f9;
     display: flex;
-    flex-direction: column; }
+    flex-direction: column;
+    box-shadow: 7px 7px 22px lightgray; }
     .deck-list-component .deck-item .deck-footer {
       display: flex;
       flex-direction: row;
@@ -96,8 +134,15 @@ button {
 .create-deck-component {
   display: flex;
   padding: 10px;
-  flex-direction: column;
-  justify-content: center; }
+  flex-direction: row;
+  justify-content: flex-start; }
+  .create-deck-component .editor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px; }
   .create-deck-component .create-deck-form {
     width: 100%;
     display: flex;

@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const initialState  = {
-	active: false,
+	active: true,
 	model: ''
 };
 
@@ -48,12 +48,12 @@ export class TextInputComponent extends React.Component {
 	render(): any {
 		return(
 			<div className={'text-input-component'}>
-				<strong
-			        onClick={this.visibilityToggle}
-					className={this.state.active ? 'hidden' : 'label'}
-				>
-					{this.state.model}
-				</strong>
+				{/*<strong*/}
+			        {/*onClick={this.visibilityToggle}*/}
+			        {/*className={this.state.active ? 'hidden' : 'label'}*/}
+				{/*>*/}
+					{/*{this.state.model}*/}
+				{/*</strong>*/}
 				<div
 					className={this.state.active ? 'input-container' : 'hidden'}
 				>
@@ -61,9 +61,9 @@ export class TextInputComponent extends React.Component {
 						value={this.state.model}
 						onChange={this.onValueChange}
 					/>
-					<div onClick={this.visibilityToggle}>Save</div>
-					/
-					<div onClick={this.onCancel}>Cancel</div>
+					{/*<div onClick={this.visibilityToggle}>Save</div>*/}
+					{/*/*/}
+					{/*<div onClick={this.onCancel}>Cancel</div>*/}
 				</div>
 			</div>
 		)

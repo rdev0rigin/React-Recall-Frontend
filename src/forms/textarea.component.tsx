@@ -1,7 +1,7 @@
 import * as React from 'react';
 
 const initialState  = {
-	active: false,
+	active: true,
 	model: ''
 };
 
@@ -22,6 +22,7 @@ export class TextareaComponent extends React.Component {
 		this.state = initialState;
 		this.visibilityToggle = this.visibilityToggle.bind(this);
 		this.onValueChange = this.onValueChange.bind(this);
+		this.onCancel = this.onCancel.bind(this);
 	}
 
 	public componentDidMount(): void {
@@ -46,22 +47,23 @@ export class TextareaComponent extends React.Component {
 
 	render(): any {
 		return(
-			<div className={'text-input-component'}>
-				<strong
-					onClick={this.visibilityToggle}
-					className={this.state.active ? 'hidden' : ''}
-				>
-					{this.state.model}
-				</strong>
+			<div className={'textarea-component'}>
+				{/*<strong*/}
+				{/*onClick={this.visibilityToggle}*/}
+				{/*className={this.state.active ? 'hidden' : 'label'}*/}
+				{/*>*/}
+				{/*{this.state.model}*/}
+				{/*</strong>*/}
 				<div
 					className={this.state.active ? 'input-container' : 'hidden'}
 				>
 					<textarea
 						value={this.state.model}
 						onChange={this.onValueChange}
-					></textarea>
-					<div onClick={this.visibilityToggle}>Save</div>
-					<div onClick={this.onCancel}>Cancel</div>
+					/>
+					{/*<div onClick={this.visibilityToggle}>Save</div>*/}
+					{/*/*/}
+					{/*<div onClick={this.onCancel}>Cancel</div>*/}
 				</div>
 			</div>
 		)

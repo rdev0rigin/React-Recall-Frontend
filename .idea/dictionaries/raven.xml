@@ -2,6 +2,7 @@
   <dictionary name="raven">
     <words>
       <w>navbar</w>
+      <w>textarea</w>
     </words>
   </dictionary>
 </component>

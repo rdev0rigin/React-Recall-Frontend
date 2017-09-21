@@ -42,37 +42,37 @@ export class CreateDeckComponent extends React.Component {
 	render(){
 		return (
 			<div className={'create-deck-component'}>
-				<h3>Pick a Deck to Edit</h3>
 				<div className={'deck-list'}>
 					<DeckListsComponent/>
 				</div>
-				or
-				<button>Create A New Deck</button>
-				<div className={'deck-editor'}>
-					Deck Details
-				<form className={'create-deck-form'}>
-					<div className={'title-input'}>
-						<strong>Title</strong>
-						<TextInputComponent
-							valueHandler = {this.deckTitleHandler}
-							initialValue={'Initial Value'}
-						/>
+				<div className={'editor'}>
+					<button>Create A New Deck</button>
+					<div className={'deck-editor'}>
+						Deck Details
+					<form className={'create-deck-form'}>
+						<div className={'title-input'}>
+							<strong>Title</strong>
+							<TextInputComponent
+								valueHandler = {this.deckTitleHandler}
+								initialValue={'Initial Value'}
+							/>
+						</div>
+						<div>
+							<strong>Description</strong>
+							<TextareaComponent
+								valueHandler={this.deckDescriptionHandler}
+								initialValue={'Initial value'}
+							/>
+						</div>
+					</form>
+						<button>Add A Card</button>
+						<ul>
+							<li>
+								{cardDetails()}
+							</li>
+						</ul>
+						<button onClick={this.saveHandler}>Save</button>
 					</div>
-					<div>
-						<strong>Description</strong>
-						<TextareaComponent
-							valueHandler={this.deckDescriptionHandler}
-							initialValue={'Initial value'}
-						/>
-					</div>
-				</form>
-					<button>Add A Card</button>
-					<ul>
-						<li>
-							{cardDetails()}
-						</li>
-					</ul>
-					<button onClick={this.saveHandler}>Save</button>
 				</div>
 			</div>
 		)
