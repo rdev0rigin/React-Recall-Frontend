@@ -9,12 +9,33 @@
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     margin-left: 10px;
     margin-right: 10px;
   }
 
+  .deck-title-input {
+    width: 90%;
+    padding: 10px;
+    font-size: 23px;
+    background: transparent;
+    box-shadow: none;
+    border: black solid 1px;
+    border-radius: 0.4em;
+    text-align: center;
+  }
+
+  .description-textarea {
+      width: 90%;
+      padding: 10px;
+      font-size: 18px;
+      background: transparent;
+      box-shadow: none;
+      border: black solid 1px;
+      border-radius: 0.4em;
+      text-align: center;
+  }
 
   .create-deck-form {
     width: 100%;
@@ -23,5 +44,27 @@
     justify-content: center;
     text-align: center;
     line-height: 2;
+  }
+
+  .deck-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 23px 0 23px;
+    overflow-y: scroll;
+  }
+
+  .deck-item {
+    background: #ffffff;
+    //border: black solid 1px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 7px 22px lightgray;
+    margin: 0 0 10px 0;
+    .deck-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+    }
   }
 }

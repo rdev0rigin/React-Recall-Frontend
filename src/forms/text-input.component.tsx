@@ -2,7 +2,7 @@ import * as React from 'react';
 
 const initialState  = {
 	active: true,
-	model: ''
+	model: 'initial state'
 };
 
 export interface TextInputState {
@@ -27,12 +27,11 @@ export class TextInputComponent extends React.Component {
 
 	public componentDidMount(): void {
 		this.setState({model: this.props.initialValue});
-		console.log('input state', this.state);
+		console.log('input state', this.state, this.props.initialValue);
 	}
 
 	public onValueChange(e): void {
 		this.setState({model: e.target.value});
-		console.log('onValueChange', e.target.value, this.state.model);
 		this.props.valueHandler(e.target.value);
 	}
 

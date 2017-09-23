@@ -1,20 +1,32 @@
 export interface FlashCard {
-	id: string;
+	id?: string;
 	deckId?: string;
-	question?: string;
-	answer?: string;
+	question: string;
+	answer: string;
 	altAnswers?: string[];
 }
 
 export interface FlashCardDeck {
 	cards: FlashCard[];
 	id?: string;
-	createdOn?: string;
 	title: string;
 	description: string;
-	authorName: string;
-	authorId: string;
+	authorName?: string;
+	authorId?: string;
 }
+
+export const NewDeck = (): FlashCardDeck => {
+	return {
+		cards: [],
+		title: '',
+		description: '',
+	} as FlashCardDeck
+};
+
+export const NewCard: FlashCard = {
+	question: '',
+	answer: ''
+};
 
 export const DECKS = (deckName: string): any => {
 	switch (deckName) {

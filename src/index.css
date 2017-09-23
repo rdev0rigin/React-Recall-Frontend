@@ -141,10 +141,28 @@ button {
     padding: 10px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: flex-start;
     width: 100%;
     margin-left: 10px;
     margin-right: 10px; }
+  .create-deck-component .deck-title-input {
+    width: 90%;
+    padding: 10px;
+    font-size: 23px;
+    background: transparent;
+    box-shadow: none;
+    border: black solid 1px;
+    border-radius: 0.4em;
+    text-align: center; }
+  .create-deck-component .description-textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 18px;
+    background: transparent;
+    box-shadow: none;
+    border: black solid 1px;
+    border-radius: 0.4em;
+    text-align: center; }
   .create-deck-component .create-deck-form {
     width: 100%;
     display: flex;
@@ -152,5 +170,21 @@ button {
     justify-content: center;
     text-align: center;
     line-height: 2; }
+  .create-deck-component .deck-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding: 0 23px 0 23px;
+    overflow-y: scroll; }
+  .create-deck-component .deck-item {
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 7px 7px 22px lightgray;
+    margin: 0 0 10px 0; }
+    .create-deck-component .deck-item .deck-footer {
+      display: flex;
+      flex-direction: row;
+      justify-content: center; }
 
 /*# sourceMappingURL=index.css.map */

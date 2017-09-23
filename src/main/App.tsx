@@ -6,9 +6,10 @@ import {RecallStore} from '../services/store.redux';
 import {RecallState} from './app.consts';
 import {SignInComponent} from '../sign-in/sign-in.component';
 import {loadGapi} from '../services/gapi.service';
-import {DeckListsComponent} from '../decks/deck-list.component';
+// import {DeckListsComponent} from '../decks/deck-list.component';
 import {SplashComponent} from './splash.component';
 import {CreateDeckComponent} from '../decks/create-deck.component';
+import {decksList} from '../decks/deck.consts';
 
 class App extends React.Component {
 	public state: RecallState;
@@ -35,7 +36,12 @@ class App extends React.Component {
 	private mainLayout = (routes) => (
 		<div className={'main-container'}>
 			<div className={'top-toolbar'}>
-				<div className={'title'}> React Recall <small>a flashcard game</small></div>
+				<div className={'title'}>
+					React Recall <small>a flashcard game</small>
+				</div>
+				<div className={'currentDeck'}>
+
+				</div>
 			</div>
 			<div className={'center-row'}>
 				<div className={'side-navbar'}>
@@ -66,7 +72,7 @@ class App extends React.Component {
 			<Route
 				path={'/choose-deck'}
 				render={() => {
-					return <DeckListsComponent/>
+					return decksList({})
 				}}
 			/>
 			<Route
