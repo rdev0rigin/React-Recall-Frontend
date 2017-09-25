@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {CardsList, decksList} from './deck.consts';
+import {CardsEditableList, DecksList} from './deck.consts';
 import {RecallStore} from '../services/store.redux';
 import {createDeck, getDecks, updateDeck} from '../services/decks.service';
 import {FlashCardDeck, NewCard, NewDeck} from '../models/decks.model';
@@ -58,7 +58,8 @@ export class CreateDeckComponent extends React.Component {
 						NewCard
 					]
 				}
-			})
+			}
+		);
 	}
 
 	private saveHandler(e): void {
@@ -67,8 +68,11 @@ export class CreateDeckComponent extends React.Component {
 		if(!!this.state.formData.id) {
 			updateDeck(this.state.formData)
 				.subscribe(deck => {
-					console.log('update response', deck);
-					this.setState({formData: deck})
+
+					// Inserting new deck into the states decks and updating formData with saved values
+					let updatedDecks = this.state.decks;
+					updatedDecks[this.state.decks.findIndex(obj => obj.id === deck.id)] = deck;
+					this.setState({formData: deck, decks: updatedDecks});
 				})
 		} else {
 			const newDeckData = {
@@ -77,8 +81,8 @@ export class CreateDeckComponent extends React.Component {
 				authorName: user.firstName + ' ' + user.lastName,
 				authorId: user.id,
 				cards: this.state.formData.cards
-
 			};
+
 			createDeck(newDeckData).subscribe(deck => {
 				console.log('new deck', deck);
 				this.setState({formData: deck})
@@ -100,7 +104,8 @@ export class CreateDeckComponent extends React.Component {
 
 	private cardQuestionHandler(event, index): any {
 		const newValue = event.target.value;
-			console.log('question value', newValue);
+
+		// inserting new value to cards in array and setting new state
 		let cards = this.state.formData.cards;
 		cards[index] = Object.assign({}, cards[index], {question: newValue});
 		this.setState(
@@ -118,7 +123,8 @@ export class CreateDeckComponent extends React.Component {
 
 	private cardAnswerHandler(event, index): any {
 		const newValue = event.target.value;
-			console.log('question value', newValue);
+
+		// inserting new value to cards in array and setting new state
 		let cards = this.state.formData.cards;
 		cards[index] = Object.assign({}, cards[index], {answer: newValue});
 		this.setState(
@@ -131,7 +137,6 @@ export class CreateDeckComponent extends React.Component {
 				}
 			}
 		);
-
 	}
 
 	private deckDescriptionHandler(event): any {
@@ -170,7 +175,7 @@ export class CreateDeckComponent extends React.Component {
 					<div className={'create-deck-component'}>
 						<div className={'create-deck-list'}>
 							<strong>Decks</strong>
-							{ decksList(
+							{ DecksList(
 								{
 									decks: this.state.decks,
 									handler: this.deckSelectHandler
@@ -189,7 +194,7 @@ export class CreateDeckComponent extends React.Component {
 									}
 								)}
 								<button onClick={this.addNewCard}>Add A Card</button>
-								{CardsList(
+								{CardsEditableList(
 									{
 										questionHandler: this.cardQuestionHandler,
 										answerHandler: this.cardAnswerHandler,

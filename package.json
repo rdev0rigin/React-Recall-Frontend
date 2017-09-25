@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@types/react-router-dom": "^4.0.7",
+    "moment": "^2.18.1",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
     "react-router": "^4.2.0",
@@ -24,6 +25,7 @@
     "@types/gapi": "^0.0.35",
     "@types/gapi.auth2": "^0.0.44",
     "@types/jest": "^20.0.8",
+    "@types/moment": "^2.13.0",
     "@types/node": "^8.0.28",
     "@types/react": "^16.0.5",
     "@types/react-dom": "^15.5.4",

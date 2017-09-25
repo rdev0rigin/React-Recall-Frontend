@@ -16,11 +16,12 @@ export interface FlashCardDeck {
 }
 
 export const NewDeck = (): FlashCardDeck => {
-	return {
+
+	return  {
 		cards: [],
 		title: '',
 		description: '',
-	} as FlashCardDeck
+	}
 };
 
 export const NewCard: FlashCard = {

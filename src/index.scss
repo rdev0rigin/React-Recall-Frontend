@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -9,3 +17,4 @@ body {
 @import './forms/textarea.style';
 @import 'decks/deck-list.style';
 @import 'decks/create-deck.style';
+@import 'decks/select-deck.style';
