@@ -2,20 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2eea285-05d7-4468-ab74-b8a5a9947632" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/decks/select-deck.component.tsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/decks/select-deck.style.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/679c2c32c5ef562b90d06313c7f432a1f73f08b4/index.scssc" afterPath="$PROJECT_DIR$/.sass-cache/679c2c32c5ef562b90d06313c7f432a1f73f08b4/index.scssc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/decks/editable-card.component.tsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/decks/editable-deck.component.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/063fd9d9954f67526e0839ac55b7f2fd6a7ba244/create-deck.style.scssc" afterPath="$PROJECT_DIR$/.sass-cache/063fd9d9954f67526e0839ac55b7f2fd6a7ba244/create-deck.style.scssc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/bbea0b809a110ca7f3d22932e466eb35e819ceef/textarea.style.scssc" afterPath="$PROJECT_DIR$/.sass-cache/bbea0b809a110ca7f3d22932e466eb35e819ceef/textarea.style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/decks/create-deck.component.tsx" afterPath="$PROJECT_DIR$/src/decks/create-deck.component.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/decks/create-deck.style.scss" afterPath="$PROJECT_DIR$/src/decks/create-deck.style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/decks/deck.consts.tsx" afterPath="$PROJECT_DIR$/src/decks/deck.consts.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forms/textarea.component.tsx" afterPath="$PROJECT_DIR$/src/forms/textarea.component.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/forms/textarea.style.scss" afterPath="$PROJECT_DIR$/src/forms/textarea.style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css.map" afterPath="$PROJECT_DIR$/src/index.css.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.scss" afterPath="$PROJECT_DIR$/src/index.scss" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/App.tsx" afterPath="$PROJECT_DIR$/src/main/App.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/models/decks.model.tsx" afterPath="$PROJECT_DIR$/src/models/decks.model.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/yarn.lock" afterPath="$PROJECT_DIR$/yarn.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/app.reducer.tsx" afterPath="$PROJECT_DIR$/src/main/app.reducer.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tsconfig.json" afterPath="$PROJECT_DIR$/tsconfig.json" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -28,14 +28,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.51384085">
+    <splitter split-orientation="horizontal" split-proportion="0.58783203">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="create-deck.component.tsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/decks/create-deck.component.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="448">
-                  <caret line="137" column="13" lean-forward="true" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+                <state relative-caret-position="401">
+                  <caret line="181" column="37" lean-forward="false" selection-start-line="181" selection-start-column="37" selection-end-line="181" selection-end-column="37" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -43,56 +43,44 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="select-deck.component.tsx" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/decks/select-deck.component.tsx">
+          <file leaf-file-name="textarea.component.tsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/forms/textarea.component.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="-679">
-                  <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+                <state relative-caret-position="321">
+                  <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="store.redux.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/services/store.redux.tsx">
+          <file leaf-file-name="textarea.style.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/forms/textarea.style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="120">
-                  <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+                <state relative-caret-position="315">
+                  <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="select-deck.style.scss" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/decks/select-deck.style.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="765">
+                  <caret line="51" column="0" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="51" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="editable-deck.component.tsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/decks/editable-deck.component.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="456">
+                  <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
                   <folding>
-                    <element signature="e#0#50#0" expanded="true" />
+                    <element signature="e#0#31#0" expanded="true" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/.gitignore">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="15">
-                  <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.reducer.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/app.reducer.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-                  <folding>
-                    <element signature="e#0#47#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="text-input.component.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/forms/text-input.component.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -101,83 +89,21 @@
       </split-first>
       <split-second>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="decks.model.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/models/decks.model.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="250">
-                  <caret line="22" column="24" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="22" selection-end-column="24" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/App.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="200">
-                  <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-                  <folding>
-                    <element signature="e#0#31#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="textarea.style.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/forms/textarea.style.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="420">
-                  <caret line="28" column="3" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="28" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deck-list.style.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/decks/deck-list.style.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="345">
-                  <caret line="23" column="3" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="23" selection-end-column="3" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="app.style.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/app.style.scss">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="855">
-                  <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="create-deck.style.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/decks/create-deck.style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="810">
-                  <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+                <state relative-caret-position="1635">
+                  <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="text-input.style.scss" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/forms/text-input.style.scss">
+          <file leaf-file-name="editable-card.component.tsx" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/decks/editable-card.component.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="405">
-                  <caret line="27" column="23" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="27" selection-end-column="23" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="deck.consts.tsx" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/decks/deck.consts.tsx">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="128">
-                  <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+                <state relative-caret-position="-268">
+                  <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -185,11 +111,11 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="select-deck.style.scss" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/decks/select-deck.style.scss">
+          <file leaf-file-name="app.style.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/app.style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="462">
-                  <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+                <state relative-caret-position="680">
+                  <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
@@ -233,7 +159,6 @@
         <option value="$PROJECT_DIR$/src/main/App.test.tsx" />
         <option value="$PROJECT_DIR$/tslint.json" />
         <option value="$PROJECT_DIR$/src/services/socket-io.service.tsx" />
-        <option value="$PROJECT_DIR$/tsconfig.json" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/models/user.model.tsx" />
         <option value="$PROJECT_DIR$/src/main/App.scss" />
@@ -246,29 +171,32 @@
         <option value="$PROJECT_DIR$/src/create-deck/create-deck.style.scss" />
         <option value="$PROJECT_DIR$/src/create-deck/deck-list.style.scss" />
         <option value="$PROJECT_DIR$/src/forms/text-input.style.scss" />
-        <option value="$PROJECT_DIR$/src/forms/textarea.style.scss" />
-        <option value="$PROJECT_DIR$/src/forms/textarea.component.tsx" />
         <option value="$PROJECT_DIR$/tsconfig.test.json" />
         <option value="$PROJECT_DIR$/src/navbar/navbar.test.tsx" />
         <option value="$PROJECT_DIR$/src/sign-in/sign-in.component.tsx" />
         <option value="$PROJECT_DIR$/src/services/gapi.service.tsx" />
-        <option value="$PROJECT_DIR$/src/main/app.reducer.tsx" />
         <option value="$PROJECT_DIR$/src/decks/decks.service.tsx" />
         <option value="$PROJECT_DIR$/src/main/app.style.scss" />
         <option value="$PROJECT_DIR$/src/main/app.consts.tsx" />
         <option value="$PROJECT_DIR$/src/decks/deck-list.style.scss" />
         <option value="$PROJECT_DIR$/src/forms/text-input.component.tsx" />
-        <option value="$PROJECT_DIR$/src/decks/create-deck.style.scss" />
         <option value="$PROJECT_DIR$/src/services/decks.service.tsx" />
         <option value="$PROJECT_DIR$/src/decks/deck-list.component.tsx" />
-        <option value="$PROJECT_DIR$/src/models/decks.model.tsx" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/App.tsx" />
         <option value="$PROJECT_DIR$/src/index.scss" />
-        <option value="$PROJECT_DIR$/src/decks/create-deck.component.tsx" />
         <option value="$PROJECT_DIR$/src/decks/select-deck.component.tsx" />
-        <option value="$PROJECT_DIR$/src/decks/deck.consts.tsx" />
         <option value="$PROJECT_DIR$/src/decks/select-deck.style.scss" />
+        <option value="$PROJECT_DIR$/src/models/decks.model.tsx" />
+        <option value="$PROJECT_DIR$/src/decks/deck.consts.tsx" />
+        <option value="$PROJECT_DIR$/src/main/app.reducer.tsx" />
+        <option value="$PROJECT_DIR$/tsconfig.json" />
+        <option value="$PROJECT_DIR$/src/decks/editable-card.component.tsx" />
+        <option value="$PROJECT_DIR$/src/decks/create-deck.component.tsx" />
+        <option value="$PROJECT_DIR$/src/decks/editable-deck.component.tsx" />
+        <option value="$PROJECT_DIR$/src/forms/textarea.component.tsx" />
+        <option value="$PROJECT_DIR$/src/forms/textarea.style.scss" />
+        <option value="$PROJECT_DIR$/src/decks/create-deck.style.scss" />
       </list>
     </option>
   </component>
@@ -325,6 +253,12 @@
               <item name="recall-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="recall-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recall-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recall-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -375,7 +309,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="SearchEverywhereHistoryKey" value="navba&#9;null&#9;null&#10;na&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file:///Users/raven/dev0/recall-2/src/decks/create-deck.component.tsx&#10;navba&#9;null&#9;null&#10;na&#9;null&#9;null" />
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
@@ -415,28 +349,28 @@
       <workItem from="1505572901775" duration="42587000" />
       <workItem from="1505867930212" duration="29321000" />
       <workItem from="1505955826042" duration="46390000" />
-      <workItem from="1506285718278" duration="10193000" />
+      <workItem from="1506285718278" duration="42020000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128491000" />
+    <option name="totallyTimeSpent" value="160318000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18534179" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17758985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39054728" sideWeight="0.5081043" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.47780126" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25870648" sideWeight="0.4918957" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25870648" sideWeight="0.4918957" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -455,9 +389,9 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.329602" sideWeight="0.47780126" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25870648" sideWeight="0.4918957" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25870648" sideWeight="0.4918957" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18534179" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17758985" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -477,32 +411,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/package.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="32" lean-forward="true" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/decks.model.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
-          <caret line="95" column="2" lean-forward="false" selection-start-line="95" selection-start-column="2" selection-end-line="95" selection-end-column="2" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/app.reducer.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/app.actions.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -573,6 +481,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="15" column="30" lean-forward="false" selection-start-line="15" selection-start-column="30" selection-end-line="15" selection-end-column="30" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -583,18 +494,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tslint.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-626">
-          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/services/socket-io.service.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="19" lean-forward="false" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -635,6 +539,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="175">
           <caret line="26" column="5" lean-forward="true" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#31#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -650,13 +557,6 @@
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/textarea.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="62" column="22" lean-forward="false" selection-start-line="62" selection-start-column="22" selection-end-line="62" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -684,26 +584,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/tsconfig.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="18" column="17" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/app.consts.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="13" column="23" lean-forward="false" selection-start-line="13" selection-start-column="23" selection-end-line="13" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/app.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="855">
-          <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -718,41 +602,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/decks/deck-list.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="23" column="3" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="23" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/text-input.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/textarea.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="28" column="3" lean-forward="false" selection-start-line="19" selection-start-column="1" selection-end-line="28" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="323">
           <caret line="1181" column="7" lean-forward="true" selection-start-line="1181" selection-start-column="7" selection-end-line="1181" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/forms/text-input.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="23" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -762,24 +615,6 @@
         <state relative-caret-position="15">
           <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/models/decks.model.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="250">
-          <caret line="22" column="24" lean-forward="false" selection-start-line="20" selection-start-column="8" selection-end-line="22" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -835,46 +670,124 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/app.reducer.tsx">
+    <entry file="file://$PROJECT_DIR$/src/forms/text-input.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="359">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="27" selection-start-column="23" selection-end-line="27" selection-end-column="23" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/decks/create-deck.component.tsx">
+    <entry file="file://$PROJECT_DIR$/tslint.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="137" column="13" lean-forward="true" selection-start-line="137" selection-start-column="13" selection-end-line="137" selection-end-column="13" />
+        <state relative-caret-position="19">
+          <caret line="17" column="22" lean-forward="false" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/select-deck.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="73" column="32" lean-forward="false" selection-start-line="73" selection-start-column="32" selection-end-line="73" selection-end-column="32" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/decks/select-deck.component.tsx">
+    <entry file="file://$PROJECT_DIR$/src/models/decks.model.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-679">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        <state relative-caret-position="150">
+          <caret line="10" column="7" lean-forward="true" selection-start-line="10" selection-start-column="7" selection-end-line="10" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/decks/create-deck.style.scss">
+    <entry file="file://$PROJECT_DIR$/src/forms/text-input.style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="54" column="3" lean-forward="true" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="3" />
+        <state relative-caret-position="405">
+          <caret line="27" column="23" lean-forward="false" selection-start-line="20" selection-start-column="3" selection-end-line="27" selection-end-column="23" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/decks/deck.consts.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="30" column="20" lean-forward="false" selection-start-line="30" selection-start-column="20" selection-end-line="30" selection-end-column="20" />
+        <state relative-caret-position="255">
+          <caret line="17" column="20" lean-forward="false" selection-start-line="17" selection-start-column="20" selection-end-line="17" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/app.reducer.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="8" column="21" lean-forward="false" selection-start-line="8" selection-start-column="21" selection-end-line="8" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#47#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/deck-list.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="23" column="3" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="23" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/node_modules/rxjs-es/src/Subscription.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="30" column="13" lean-forward="false" selection-start-line="30" selection-start-column="13" selection-end-line="30" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="36" lean-forward="false" selection-start-line="5" selection-start-column="36" selection-end-line="5" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/editable-card.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-268">
+          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/create-deck.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="401">
+          <caret line="181" column="37" lean-forward="false" selection-start-line="181" selection-start-column="37" selection-end-line="181" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/editable-deck.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="49" column="20" lean-forward="true" selection-start-line="49" selection-start-column="20" selection-end-line="49" selection-end-column="20" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>
@@ -883,8 +796,40 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/decks/select-deck.style.scss">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="45" column="22" lean-forward="false" selection-start-line="45" selection-start-column="22" selection-end-line="45" selection-end-column="22" />
+        <state relative-caret-position="765">
+          <caret line="51" column="0" lean-forward="true" selection-start-line="7" selection-start-column="2" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forms/textarea.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="46" lean-forward="false" selection-start-line="21" selection-start-column="46" selection-end-line="21" selection-end-column="46" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/forms/textarea.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="39" column="0" lean-forward="true" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/create-deck.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1635">
+          <caret line="109" column="5" lean-forward="true" selection-start-line="109" selection-start-column="5" selection-end-line="109" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/app.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="57" column="6" lean-forward="false" selection-start-line="57" selection-start-column="6" selection-end-line="57" selection-end-column="6" />
           <folding />
         </state>
       </provider>

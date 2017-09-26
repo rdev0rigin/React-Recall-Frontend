@@ -1,8 +1,10 @@
 import * as React from 'react';
-import {CardsEditableList, DecksList} from './deck.consts';
+import {DecksList} from './deck.consts';
 import {RecallStore} from '../services/store.redux';
 import {createDeck, getDecks, updateDeck} from '../services/decks.service';
 import {FlashCardDeck, NewCard, NewDeck} from '../models/decks.model';
+import {EditableCardComponent} from './editable-card.component';
+import {EditableDeckComponent} from './editable-deck.component';
 
 const initialState = {
 	dataReady: false,
@@ -28,8 +30,8 @@ export class CreateDeckComponent extends React.Component {
 		this.saveHandler = this.saveHandler.bind(this);
 		this.deckSelectHandler = this.deckSelectHandler.bind(this);
 		this.addNewCard = this.addNewCard.bind(this);
-		this.cardQuestionHandler = this.cardQuestionHandler.bind(this);
-		this.cardAnswerHandler = this.cardAnswerHandler.bind(this);
+		this.cardValueHandler = this.cardValueHandler.bind(this);
+		this.deckHandler = this.deckHandler.bind(this);
 		this.state = initialState;
 	}
 
@@ -90,6 +92,30 @@ export class CreateDeckComponent extends React.Component {
 		}
 	}
 
+	private cardValueHandler(newCard): any {
+		this.setState({formData: {
+			...this.state.formData,
+			cards:
+				this.state.formData.cards.map(card => {
+					if(card.id !== newCard.id){
+						return card;
+					} else {
+						return newCard;
+					}
+				})
+		}})
+	};
+
+	private deckHandler(value: {title: string, description: string}): any {
+		console.log('new value', value, this.state.formData);
+		this.setState({
+			formData: {
+				...this.state.formData,
+				...value
+			}
+		});
+	}
+
 	private deckTitleHandler(event): any {
 		const newValue = event.target.value;
 		this.setState(
@@ -97,43 +123,6 @@ export class CreateDeckComponent extends React.Component {
 				formData: {
 					...this.state.formData,
 					title: newValue
-				}
-			}
-		);
-	}
-
-	private cardQuestionHandler(event, index): any {
-		const newValue = event.target.value;
-
-		// inserting new value to cards in array and setting new state
-		let cards = this.state.formData.cards;
-		cards[index] = Object.assign({}, cards[index], {question: newValue});
-		this.setState(
-			{
-				formData: {
-					...this.state.formData,
-					cards: [
-						...cards
-					]
-				}
-			}
-		);
-
-	}
-
-	private cardAnswerHandler(event, index): any {
-		const newValue = event.target.value;
-
-		// inserting new value to cards in array and setting new state
-		let cards = this.state.formData.cards;
-		cards[index] = Object.assign({}, cards[index], {answer: newValue});
-		this.setState(
-			{
-				formData: {
-					...this.state.formData,
-					cards: [
-						...cards
-					]
 				}
 			}
 		);
@@ -153,19 +142,24 @@ export class CreateDeckComponent extends React.Component {
 	}
 
 
-	private deckSelectHandler(id: string): void {
+	private deckSelectHandler(deckId: string): void {
 		this.setState({dataReady: false});
 		const selectedDeck = Object.assign({}, this.state.decks
-			.filter(deck => deck.id === id)[0]);
-		this.setState(
-			{
-				currentDeck: selectedDeck,
-				formData: selectedDeck
+			.filter(deck => deck.id === deckId)[0]);
+		if(this.state.currentDeck && this.state.currentDeck.id) {
+			let previousDeckRef = document.getElementById(this.state.currentDeck.id);
+			if (previousDeckRef) {
+				previousDeckRef.className = previousDeckRef.className.replace(' active', '');
 			}
-		);
-		console.log('selected deck', selectedDeck);
+		}
+		if(selectedDeck.id){
+			let selectedDeckRef = document.getElementById(selectedDeck.id);
+			if(selectedDeckRef) {
+				selectedDeckRef.className += ' active';
+			}
+		}
 		RecallStore.dispatch({type: 'DECK_SELECTED', deck: selectedDeck});
-		this.setState({dataReady: true});
+		this.setState({currentDeck: selectedDeck, formData: selectedDeck, dataReady: true});
 	}
 
 	render(){
@@ -185,22 +179,24 @@ export class CreateDeckComponent extends React.Component {
 						<div className={'editor'}>
 							<button onClick={() => this.initializeFormData(NewDeck())}>Create A New Deck</button>
 							<div className={'deck-editor'}>
-								{DeckForm(
-									{
-										title: this.state.formData.title,
-										description: this.state.formData.description,
-										deckTitleHandler: this.deckTitleHandler,
-										deckDescriptionHandler: this.deckDescriptionHandler
-									}
-								)}
+								<EditableDeckComponent
+									title={this.state.formData.title}
+									description={this.state.formData.description}
+									deckHandler={this.deckHandler}
+								/>
 								<button onClick={this.addNewCard}>Add A Card</button>
-								{CardsEditableList(
-									{
-										questionHandler: this.cardQuestionHandler,
-										answerHandler: this.cardAnswerHandler,
-										cards: this.state.formData.cards
-									}
-								)}
+								<div className={'cards-list'}>
+									{this.state.formData.cards.map(card => {
+										return (
+											<div className={'card-item'}>
+												<EditableCardComponent
+													card={card}
+													cardValueHandler={this.cardValueHandler}
+												/>
+											</div>
+										)
+									})}
+								</div>
 								<button onClick={this.saveHandler}>Save</button>
 							</div>
 						</div>
@@ -212,22 +208,3 @@ export class CreateDeckComponent extends React.Component {
 				)
 	}
 }
-
-export const DeckForm = (props): any =>
-	<div className={'create-deck-form'}>
-		<div className={'title-input'}>
-			<h2>Title</h2>
-			<input className={'deck-title-input'}
-				onChange={props.deckTitleHandler}
-				value={props.title}
-			/>
-		</div>
-		<div>
-			<h2>Description</h2>
-			<textarea className={'description-textarea'}
-				onChange={props.deckDescriptionHandler}
-				value={props.description}
-			/>
-		</div>
-	</div>
-;

@@ -96,27 +96,27 @@ button {
   border-radius: 0.4em;
   text-align: center; }
 
-.textarea-component .hidden {
-  display: none; }
-.textarea-component .label {
-  border: black solid 1px;
-  border-radius: 0.4em;
-  padding: 5px;
-  margin: 5px; }
-.textarea-component .input-container {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: center; }
-.textarea-component textarea {
-  width: 100%;
-  padding: 10px;
-  font-size: 23px;
-  background: transparent;
+.textarea-container {
+  position: relative; }
+
+.textarea {
+  width: 90%;
+  outline: none;
+  padding: 10px 10px 10px 10px;
   box-shadow: none;
-  border: black solid 1px;
-  border-radius: 0.4em;
-  text-align: center; }
+  display: block;
+  border: 2px solid black;
+  overflow: hidden;
+  transition: height 0.2s ease; }
+
+.textarea--ghost {
+  opacity: 0.3;
+  display: block;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  visibility: hidden;
+  position: absolute;
+  top: 0; }
 
 .deck-list-component {
   display: flex;
@@ -139,11 +139,11 @@ button {
 
 .create-deck-component {
   display: flex;
+  margin: 20px 0 0 0;
   padding: 10px;
   flex-direction: row;
   justify-content: flex-start; }
   .create-deck-component .editor {
-    background: white;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -161,15 +161,19 @@ button {
     border-radius: 0.4em;
     text-align: center; }
   .create-deck-component .description-textarea {
-    width: 90%;
     padding: 10px;
-    font-size: 18px;
     background: transparent;
     box-shadow: none;
     border: black solid 1px;
-    border-radius: 0.4em;
-    text-align: center; }
+    border-radius: 0.4em; }
+    .create-deck-component .description-textarea textarea, .create-deck-component .description-textarea .textarea {
+      line-height: 1;
+      font-size: 12px;
+      border: none;
+      resize: none; }
   .create-deck-component .create-deck-form {
+    background: white;
+    padding: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -183,15 +187,75 @@ button {
     padding: 0 23px 0 23px;
     overflow-y: scroll; }
   .create-deck-component .deck-item {
-    background: #ffffff;
+    background: rgba(255, 255, 255, 0.6);
+    width: 200px;
     display: flex;
     flex-direction: column;
-    box-shadow: 7px 7px 22px lightgray;
-    margin: 0 0 10px 0; }
+    margin: 0 0 10px 0;
+    padding: 10px;
+    transition: all 0.6s linear; }
+    .create-deck-component .deck-item.active, .create-deck-component .deck-item:hover {
+      cursor: pointer;
+      background: white;
+      box-shadow: 7px 7px 22px #9a9a9a;
+      transition: all 0.6s linear; }
+    .create-deck-component .deck-item .deck-title {
+      text-align: center;
+      font-size: 18px; }
+    .create-deck-component .deck-item .deck-description {
+      font-size: 12px;
+      font-weight: 300; }
     .create-deck-component .deck-item .deck-footer {
+      font-size: 8px;
       display: flex;
       flex-direction: row;
-      justify-content: center; }
+      justify-content: space-between; }
+  .create-deck-component div.cards-list {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start; }
+  .create-deck-component div.card-item {
+    margin: 0 0 10px 0;
+    padding: 20px 10px;
+    border-bottom: none;
+    background: white;
+    transition: all 0.6s linear; }
+    .create-deck-component div.card-item:hover {
+      transition: all 0.6s linear;
+      cursor: pointer;
+      background: #cfe4f5; }
+  .create-deck-component div.card-details {
+    background: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    .create-deck-component div.card-details .question {
+      background: none;
+      height: auto;
+      border-right: black solid 1px;
+      text-align: center;
+      flex-basis: 33%; }
+      .create-deck-component div.card-details .question .textarea, .create-deck-component div.card-details .question textarea {
+        line-height: 1;
+        font-size: 12px;
+        background: none;
+        border: none;
+        resize: none;
+        text-align: center; }
+    .create-deck-component div.card-details .answer {
+      background: none;
+      height: 100%;
+      flex-basis: 67%; }
+      .create-deck-component div.card-details .answer .textarea, .create-deck-component div.card-details .answer textarea {
+        line-height: 1;
+        font-size: 12px;
+        background: none;
+        border: none;
+        resize: none;
+        text-align: center; }
 
 .select-deck-component {
   display: flex;

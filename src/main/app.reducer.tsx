@@ -14,7 +14,7 @@ export const RecallReducer = (state = InitialState, action: Action) => {
 		case'ALL_DECKS_FETCHED':
 			return {...state, userDecksReady: true, decks: action.decks};
 		case'DECK_SELECTED':
-			return {...state, currentDeck: action.deck};
+			return {...state, currentDeck: action.deck, deckSelected: true};
 		default:
 			return state;
 	}

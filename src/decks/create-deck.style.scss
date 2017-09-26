@@ -1,11 +1,11 @@
 .create-deck-component {
   display: flex;
+  margin: 20px 0 0 0;
   padding: 10px;
   flex-direction: row;
   justify-content: flex-start;
 
   .editor {
-    background: white;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -27,17 +27,23 @@
   }
 
   .description-textarea {
-      width: 90%;
-      padding: 10px;
-      font-size: 18px;
-      background: transparent;
-      box-shadow: none;
-      border: black solid 1px;
-      border-radius: 0.4em;
-      text-align: center;
+    padding: 10px;
+    background: transparent;
+    box-shadow: none;
+    border: black solid 1px;
+    border-radius: 0.4em;
+
+    textarea, .textarea {
+      line-height: 1;
+      font-size: 12px;
+      border: none;
+      resize: none;
+    }
   }
 
   .create-deck-form {
+    background: white;
+    padding: 10px;
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -55,16 +61,96 @@
   }
 
   .deck-item {
-    background: #ffffff;
-    //border: black solid 1px;
+    background: rgba(255, 255, 255, 0.6);
+    width: 200px;
     display: flex;
     flex-direction: column;
-    box-shadow: 7px 7px 22px lightgray;
     margin: 0 0 10px 0;
+    padding: 10px;
+    @include transition();
+    &.active, &:hover {
+      cursor: pointer;
+
+      background: rgba(255, 255, 255, 1);
+      box-shadow: 7px 7px 22px #9a9a9a;
+      @include transition();
+    }
+    .deck-title {
+      text-align: center;
+      font-size: 18px
+    }
+
+    .deck-description {
+      font-size: 12px;
+      font-weight: 300;
+    }
+
     .deck-footer {
+      font-size: 8px;
       display: flex;
       flex-direction: row;
-      justify-content: center;
+      justify-content: space-between;
+    }
+  }
+
+  div.cards-list {
+    margin-top: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  div.card-item {
+    margin: 0 0 10px 0;
+    padding: 20px 10px;
+    border-bottom: none;
+    background: white;
+    @include transition();
+    &:hover {
+      @include transition();
+      cursor: pointer;
+      background: #cfe4f5;
+    }
+
+  }
+
+  div.card-details {
+    background: none;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    .question {
+      background: none;
+      height: auto;
+      //padding: 10px;
+      border-right: black solid 1px;
+      text-align: center;
+      flex-basis: 33%;
+
+      .textarea, textarea {
+        line-height: 1;
+        font-size: 12px;
+        background: none;
+        border: none;
+        resize: none;
+        text-align: center;
+      }
+    }
+    .answer {
+      background: none;
+        height: 100%;
+      //padding: 10px;
+      flex-basis: 67%;
+      .textarea, textarea {
+        line-height: 1;
+        font-size: 12px;
+        background: none;
+        border: none;
+        resize: none;
+        text-align: center;
+      }
     }
   }
 }

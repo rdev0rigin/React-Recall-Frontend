@@ -1,72 +1,62 @@
 import * as React from 'react';
 
-const initialState  = {
-	active: true,
-	model: ''
-};
-
-export interface TextareaState {
-	active: boolean;
-	model: string;
-}
-
 export class TextareaComponent extends React.Component {
-	public state: TextareaState;
-	constructor(
-		public props: {
-			initialValue: string;
-			valueHandler: (e) => any;
-		}
-	) {
+	public ghost;
+
+	constructor(public props: {
+		height: any;
+		value: any;
+		valueHandler: any;
+		getHeight: any;
+	}){
 		super(props);
-		this.state = initialState;
-		this.visibilityToggle = this.visibilityToggle.bind(this);
-		this.onValueChange = this.onValueChange.bind(this);
-		this.onCancel = this.onCancel.bind(this);
 	}
 
-	public componentDidMount(): void {
-		this.setState({model: this.props.initialValue});
-		console.log('input state', this.state);
+	public componentDidMount(){
+		this.setFilledTextAreaHeight(this.ghost);
 	}
 
-	public onValueChange(e): void {
-		this.setState({model: e.target.value});
-		console.log('onValueChange', e.target.value, this.state.model);
-		this.props.valueHandler(e.target.value);
+	public setFilledTextAreaHeight(ghost){
+			const element = ghost;
+			console.log('ghost height', element.clientHeight);
+			this.props.getHeight(element.clientHeight);
 	}
 
-	public onCancel(): void {
-		this.setState({model: this.props.initialValue});
-		this.visibilityToggle();
+	private getExpandableField(){
+		const {height, value} = this.props;
+		return (
+			<textarea
+				className={'textarea'}
+				name={'textarea'}
+				value={value}
+				style={{
+					height
+				}}
+				onChange={(event) => {this.props.valueHandler(event.target.value)}}
+				onKeyUp={() => this.setFilledTextAreaHeight(this.ghost)}
+			/>
+		);
 	}
 
-	public visibilityToggle(): void {
-		this.setState({active: !this.state.active})
-	}
-
-	render(): any {
+	private getGhostField(){
 		return(
-			<div className={'textarea-component'}>
-				{/*<strong*/}
-				{/*onClick={this.visibilityToggle}*/}
-				{/*className={this.state.active ? 'hidden' : 'label'}*/}
-				{/*>*/}
-				{/*{this.state.model}*/}
-				{/*</strong>*/}
-				<div
-					className={this.state.active ? 'input-container' : 'hidden'}
-				>
-					<textarea
-						value={this.state.model}
-						onChange={this.onValueChange}
-					/>
-					{/*<div onClick={this.visibilityToggle}>Save</div>*/}
-					{/*/*/}
-					{/*<div onClick={this.onCancel}>Cancel</div>*/}
-				</div>
+			<div
+				className={'textarea textarea--ghost'}
+				ref={(eleRef) => this.ghost = eleRef}
+				aria-hidden='true'
+			>
+				{this.props.value}
+			</div>
+		);
+	}
+
+	render(){
+		return(
+			<div
+				className={'textarea-container'}>
+				{this.getExpandableField()}
+				{this.getGhostField()}
 			</div>
 		)
 	}
-
 }
