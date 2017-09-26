@@ -1,0 +1,40 @@
+.navbar-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+
+  .nav-button-container {
+    background: white;
+    box-shadow: #585858 2px 2px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    .label {
+      margin: 10px;
+    }
+    &:after {
+      display: block;
+      content: '';
+      height: 10px;
+      width: 100%;
+      background: $primary-color;
+    }
+    & a {
+      text-decoration: none;
+    }
+    svg {
+      width: auto;
+      margin: 21px 0 21px 0;
+    }
+    &:hover {
+      &:after{
+        background: orange;
+      }
+
+      .icon {
+        fill: orange;
+      }
+    }
+  }
+}

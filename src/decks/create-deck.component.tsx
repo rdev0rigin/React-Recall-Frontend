@@ -5,6 +5,7 @@ import {createDeck, getDecks, updateDeck} from '../services/decks.service';
 import {FlashCardDeck, NewCard, NewDeck} from '../models/decks.model';
 import {EditableCardComponent} from './editable-card.component';
 import {EditableDeckComponent} from './editable-deck.component';
+import {plusIcon} from '../assets/icons/plus';
 
 const initialState = {
 	dataReady: false,
@@ -169,6 +170,11 @@ export class CreateDeckComponent extends React.Component {
 					<div className={'create-deck-component'}>
 						<div className={'create-deck-list'}>
 							<strong>Decks</strong>
+							<button
+								className={'add'}
+								onClick={() => this.initializeFormData(NewDeck())}>
+								{plusIcon()}
+							</button>
 							{ DecksList(
 								{
 									decks: this.state.decks,
@@ -177,18 +183,34 @@ export class CreateDeckComponent extends React.Component {
 							}
 						</div>
 						<div className={'editor'}>
-							<button onClick={() => this.initializeFormData(NewDeck())}>Create A New Deck</button>
+
 							<div className={'deck-editor'}>
+								<div
+									className={'title'}>
+									DECK DETAILS
+								</div>
 								<EditableDeckComponent
 									title={this.state.formData.title}
 									description={this.state.formData.description}
 									deckHandler={this.deckHandler}
 								/>
-								<button onClick={this.addNewCard}>Add A Card</button>
 								<div className={'cards-list'}>
+								<button
+									className={'add'}
+									onClick={this.addNewCard}>
+									{plusIcon()}
+								</button>
+									<div
+										className={'title'}
+									>
+										CARD DETAILS
+									</div>
 									{this.state.formData.cards.map(card => {
 										return (
-											<div className={'card-item'}>
+											<div
+												className={'card-item'}
+												key={Math.random().toString()}
+											>
 												<EditableCardComponent
 													card={card}
 													cardValueHandler={this.cardValueHandler}

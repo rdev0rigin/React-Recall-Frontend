@@ -16,12 +16,21 @@ button {
   color: white;
   padding-top: 10px;
   padding-bottom: 10px;
-  box-shadow: 7px 7px 22px lightgray;
   transition: all 0.6s linear; }
   button:hover {
     background: #4e5eff;
     color: greenyellow;
     transition: all 0.6s linear; }
+  button.add {
+    width: 50px;
+    height: 50px;
+    border-radius: 4em;
+    background: greenyellow; }
+    button.add svg {
+      width: 12px; }
+
+a {
+  text-decoration: none; }
 
 .main-container {
   background: #f3f3f3;
@@ -29,43 +38,22 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
   width: 100vw; }
   .main-container .top-toolbar {
     background: #d9d1ee;
-    position: fixed;
-    top: 0;
     width: 100vw;
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    box-shadow: 7px 7px 22px lightgray; }
+    justify-content: space-between; }
   .main-container .center-row {
     display: flex;
     flex-direction: row;
-    padding-top: 100px;
-    padding-bottom: 100px;
-    padding-left: 100px;
-    height: 100vh; }
-    .main-container .center-row .side-navbar {
-      background: #d9d1ee;
-      position: fixed;
-      left: 0;
-      top: 100px;
-      bottom: 100px;
-      width: 100px; }
-      .main-container .center-row .side-navbar .navbar-container {
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        text-align: center; }
+    padding-bottom: 100px; }
     .main-container .center-row .main-display {
-      height: 100%;
+      height: auto;
       width: 100%;
-      overflow-x: hidden;
-      overflow-y: scroll; }
+      margin-top: 50px; }
   .main-container .footer {
     background: #d9d1ee;
     box-shadow: -7px -7px 22px lightgray;
@@ -73,6 +61,35 @@ button {
     bottom: 0;
     height: 100px;
     width: 100vw; }
+
+.navbar-component {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%; }
+  .navbar-component .nav-button-container {
+    background: white;
+    box-shadow: #585858 2px 2px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    .navbar-component .nav-button-container .label {
+      margin: 10px; }
+    .navbar-component .nav-button-container:after {
+      display: block;
+      content: '';
+      height: 10px;
+      width: 100%;
+      background: #a146ff; }
+    .navbar-component .nav-button-container a {
+      text-decoration: none; }
+    .navbar-component .nav-button-container svg {
+      width: auto;
+      margin: 21px 0 21px 0; }
+    .navbar-component .nav-button-container:hover:after {
+      background: orange; }
+    .navbar-component .nav-button-container:hover .icon {
+      fill: orange; }
 
 .text-input-component .hidden {
   display: none; }
@@ -151,6 +168,15 @@ button {
     width: 100%;
     margin-left: 10px;
     margin-right: 10px; }
+  .create-deck-component .deck-editor {
+    position: relative;
+    background: white; }
+    .create-deck-component .deck-editor .title {
+      width: 100%;
+      padding: 25px 0 25px 0;
+      text-align: center;
+      background: #a146ff;
+      color: white; }
   .create-deck-component .deck-title-input {
     width: 90%;
     padding: 10px;
@@ -180,19 +206,22 @@ button {
     justify-content: center;
     text-align: center;
     line-height: 2; }
-  .create-deck-component .deck-list {
+  .create-deck-component .create-deck-list {
+    position: relative;
     list-style: none;
     display: flex;
     flex-direction: column;
-    padding: 0 23px 0 23px;
-    overflow-y: scroll; }
+    padding: 0 23px 0 23px; }
+    .create-deck-component .create-deck-list button.add {
+      position: absolute;
+      right: 0;
+      box-shadow: 7px 7px 32px #222429; }
   .create-deck-component .deck-item {
     background: rgba(255, 255, 255, 0.6);
     width: 200px;
     display: flex;
     flex-direction: column;
     margin: 0 0 10px 0;
-    padding: 10px;
     transition: all 0.6s linear; }
     .create-deck-component .deck-item.active, .create-deck-component .deck-item:hover {
       cursor: pointer;
@@ -200,12 +229,17 @@ button {
       box-shadow: 7px 7px 22px #9a9a9a;
       transition: all 0.6s linear; }
     .create-deck-component .deck-item .deck-title {
+      background: #a146ff;
+      color: white;
+      width: 100%;
       text-align: center;
       font-size: 18px; }
     .create-deck-component .deck-item .deck-description {
+      padding: 10px;
       font-size: 12px;
       font-weight: 300; }
     .create-deck-component .deck-item .deck-footer {
+      padding: 10px;
       font-size: 8px;
       display: flex;
       flex-direction: row;
@@ -215,7 +249,21 @@ button {
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    position: relative; }
+    .create-deck-component div.cards-list button.add {
+      position: absolute;
+      right: 0;
+      top: 30px;
+      box-shadow: 7px 7px 32px #222429; }
+      .create-deck-component div.cards-list button.add:hover .icon {
+        fill: orange; }
+    .create-deck-component div.cards-list .title {
+      background: #a146ff;
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 18px; }
   .create-deck-component div.card-item {
     margin: 0 0 10px 0;
     padding: 20px 10px;
@@ -254,34 +302,30 @@ button {
         font-size: 12px;
         background: none;
         border: none;
-        resize: none;
-        text-align: center; }
+        resize: none; }
 
 .select-deck-component {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around;
-  background: lightgrey; }
+  justify-content: space-around; }
   .select-deck-component div.cards-list {
     list-style: none;
     width: 100%;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start; }
-    .select-deck-component div.cards-list div.card-item:nth-last-child(1) {
-      border-bottom: black solid 1px; }
-  .select-deck-component div.card-item {
-    margin: 0;
-    border: black solid 1px;
-    border-bottom: none;
-    background: white;
+    justify-content: flex-start;
     transition: all 0.6s linear; }
-    .select-deck-component div.card-item :hover {
+  .select-deck-component div.card-item {
+    margin: 10px 0 0 0;
+    padding: 20px;
+    background: white; }
+    .select-deck-component div.card-item:hover {
       transition: all 0.6s linear;
       cursor: pointer;
       background: #d5dbf0; }
   .select-deck-component div.card-item div.card-details {
+    transition: all 0.6s linear;
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -289,7 +333,7 @@ button {
     .select-deck-component div.card-item div.card-details .question {
       background: none;
       padding: 10px;
-      border-right: black solid 1px;
+      border-right: #808080 solid 1px;
       text-align: center;
       flex-basis: 33%; }
     .select-deck-component div.card-item div.card-details .answer {
@@ -297,7 +341,7 @@ button {
       text-align: center;
       padding: 10px;
       flex-basis: 67%; }
-  .select-deck-component ul.deck-list {
+  .select-deck-component .deck-list {
     list-style: none;
     display: flex;
     flex-direction: row;
@@ -305,7 +349,7 @@ button {
     margin: 10px;
     padding: 0 23px 14px 23px;
     overflow-y: scroll; }
-  .select-deck-component li.deck-item {
+  .select-deck-component .deck-item {
     background: #ffffff;
     display: flex;
     flex-direction: column;
@@ -313,18 +357,18 @@ button {
     width: 200px;
     padding: 10px;
     transition: all 0.6s linear; }
-    .select-deck-component li.deck-item .deck-title {
+    .select-deck-component .deck-item .deck-title {
       font-size: 18px;
       text-align: center; }
-    .select-deck-component li.deck-item .deck-description {
+    .select-deck-component .deck-item .deck-description {
       font-size: 12px;
       text-align: left; }
-    .select-deck-component li.deck-item .deck-footer {
+    .select-deck-component .deck-item .deck-footer {
       font-size: 8px;
       display: flex;
       flex-direction: row;
       justify-content: space-around; }
-    .select-deck-component li.deck-item.active {
+    .select-deck-component .deck-item.active {
       box-shadow: 7px 7px 22px #000000; }
   .select-deck-component .decks {
     background: white;

@@ -15,6 +15,17 @@
     margin-right: 10px;
   }
 
+  .deck-editor {
+    position: relative;
+    background: white;
+    .title {
+      width: 100%;
+      padding: 25px 0 25px 0;
+      text-align: center;
+      background: $primary-color;
+      color: white;
+    }
+  }
   .deck-title-input {
     width: 90%;
     padding: 10px;
@@ -52,12 +63,18 @@
     line-height: 2;
   }
 
-  .deck-list {
+  .create-deck-list {
+    position: relative;
     list-style: none;
     display: flex;
     flex-direction: column;
     padding: 0 23px 0 23px;
-    overflow-y: scroll;
+
+    button.add {
+      position: absolute;
+      right: 0;
+      box-shadow: 7px 7px 32px #222429;
+    }
   }
 
   .deck-item {
@@ -66,7 +83,6 @@
     display: flex;
     flex-direction: column;
     margin: 0 0 10px 0;
-    padding: 10px;
     @include transition();
     &.active, &:hover {
       cursor: pointer;
@@ -76,16 +92,21 @@
       @include transition();
     }
     .deck-title {
+      background: $primary-color;
+      color: white;
+      width: 100%;
       text-align: center;
       font-size: 18px
     }
 
     .deck-description {
+      padding: 10px;
       font-size: 12px;
       font-weight: 300;
     }
 
     .deck-footer {
+      padding: 10px;
       font-size: 8px;
       display: flex;
       flex-direction: row;
@@ -99,6 +120,27 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
+    position: relative;
+
+    button.add {
+      position: absolute;
+      right: 0;
+      top: 30px;
+      box-shadow: 7px 7px 32px #222429;
+      &:hover {
+        .icon {
+          fill: orange;
+        }
+      }
+    }
+
+    .title {
+      background: $primary-color;
+      color: white;
+      width: 100%;
+      text-align: center;
+      font-size: 18px
+    }
   }
 
   div.card-item {
@@ -149,7 +191,7 @@
         background: none;
         border: none;
         resize: none;
-        text-align: center;
+        //text-align: center;
       }
     }
   }

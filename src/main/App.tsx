@@ -35,21 +35,10 @@ class App extends React.Component {
 	private mainLayout = (routes) => (
 		<div className={'main-container'}>
 			<div className={'top-toolbar'}>
-				<div className={'title'}>
-					React Recall <small>a flashcard game</small>
-				</div>
-				<div className={'currentDeck'}>
-
-				</div>
+				<NavbarComponent signedIn={this.state.signedIn} />
 			</div>
 			<div className={'center-row'}>
-				<div className={'side-navbar'}>
-					<NavbarComponent signedIn={this.state.signedIn} />
-				</div>
 				{routes}
-			</div>
-			<div className={'footer'}>
-				Score Goes Here...
 			</div>
 		</div>
 	);
