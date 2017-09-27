@@ -1,0 +1,49 @@
+.flash-card-component {
+  position: relative;
+  padding-top: 30px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #12181d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+
+  .flash-card {
+    height: 60%;
+    position: relative;
+    background: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    .prev {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      .icon {
+        fill: $primary-color;
+        width: 64px;
+        opacity: .3;
+      }
+    }
+
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 0%;
+      .icon {
+        fill: $primary-color;
+        width: 64px;
+        opacity: .3;
+      }
+    }
+  }
+}

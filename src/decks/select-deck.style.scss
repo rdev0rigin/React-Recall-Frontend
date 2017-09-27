@@ -3,6 +3,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-around;
+  padding-top: 20px;
 
   div.cards-list {
     list-style: none;
@@ -65,20 +66,25 @@
     flex-direction: column;
     margin: 10px;
     width: 200px;
-    padding: 10px;
     @include transition();
 
     .deck-title {
-      font-size: 18px;
+      width: 100%;
+      padding: 25px 0 25px 0;
       text-align: center;
+      background: $primary-color;
+      color: white;
+      font-size: 18px;
     }
 
     .deck-description {
+      padding: 10px;
       font-size: 12px;
       text-align: left;
     }
 
     .deck-footer {
+      padding: 10px;
       font-size: 8px;
       display: flex;
       flex-direction: row;

@@ -1,11 +1,10 @@
 import * as React from 'react';
 import {Link} from 'react-router-dom';
 import {RecallStore} from '../services/store.redux';
-import {editIcon} from '../assets/icons/edit';
-import {stackIcon} from '../assets/icons/stack';
-import {userIcon} from '../assets/icons/user';
-import {playIcon} from '../assets/icons/play';
-import {exitIcon} from '../assets/icons/exit';
+import {
+	editIcon, exitIcon, flashIcon, matchIcon, multipleChoiceIcon, stackIcon,
+	userIcon
+} from '../assets/icons';
 
 export interface NavbarProps {
 	signedIn: boolean
@@ -57,23 +56,37 @@ export class NavbarComponent extends React.Component {
 				}
 				<Link to={'/create-deck'}>
 					<NavButton
-						label={'Create A Deck'}
+						label={'Create/Edit Deck'}
 					>
 						{editIcon()}
 					</NavButton>
 				</Link>
 				<Link to={'/choose-deck'}>
 					<NavButton
-						label={'Choose A Deck'}
+						label={'Select Deck'}
 					>
 						{stackIcon()}
 					</NavButton>
 				</Link>
-				<Link to={'/recall'}>
+				<Link to={'/flash-cards'}>
 					<NavButton
-						label={'Start Game'}
+						label={'Flash Cards'}
 					>
-						{playIcon()}
+						{flashIcon()}
+					</NavButton>
+				</Link>
+				<Link to={'/matching'}>
+					<NavButton
+						label={'Matching'}
+					>
+						{matchIcon()}
+					</NavButton>
+				</Link>
+				<Link to={'/multiple-choice'}>
+					<NavButton
+						label={'Multiple Choice'}
+					>
+						{multipleChoiceIcon()}
 					</NavButton>
 				</Link>
 			</div>

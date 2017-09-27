@@ -4,9 +4,11 @@ html {
 *, *:before, *:after {
   box-sizing: inherit; }
 
-body {
+body, #root {
   margin: 0;
   padding: 0;
+  height: 100vh;
+  width: 100vw;
   font-family: sans-serif; }
 
 button {
@@ -37,36 +39,29 @@ a {
   color: #585858;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-start;
+  height: 100%;
   width: 100vw; }
   .main-container .top-toolbar {
     background: #d9d1ee;
+    position: absolute;
     width: 100vw;
     height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: space-between; }
-  .main-container .center-row {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 100px; }
-    .main-container .center-row .main-display {
-      height: auto;
-      width: 100%;
-      margin-top: 50px; }
-  .main-container .footer {
-    background: #d9d1ee;
-    box-shadow: -7px -7px 22px lightgray;
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    width: 100vw; }
+    justify-content: space-between;
+    z-index: 9; }
+  .main-container .main-display {
+    padding-top: 100px;
+    height: 100%;
+    width: 100%; }
 
 .navbar-component {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%; }
+  width: 100%;
+  z-index: 10; }
   .navbar-component .nav-button-container {
     background: white;
     box-shadow: #585858 2px 2px 20px;
@@ -81,8 +76,6 @@ a {
       height: 10px;
       width: 100%;
       background: #a146ff; }
-    .navbar-component .nav-button-container a {
-      text-decoration: none; }
     .navbar-component .nav-button-container svg {
       width: auto;
       margin: 21px 0 21px 0; }
@@ -308,7 +301,8 @@ a {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-around; }
+  justify-content: space-around;
+  padding-top: 20px; }
   .select-deck-component div.cards-list {
     list-style: none;
     width: 100%;
@@ -355,15 +349,20 @@ a {
     flex-direction: column;
     margin: 10px;
     width: 200px;
-    padding: 10px;
     transition: all 0.6s linear; }
     .select-deck-component .deck-item .deck-title {
-      font-size: 18px;
-      text-align: center; }
+      width: 100%;
+      padding: 25px 0 25px 0;
+      text-align: center;
+      background: #a146ff;
+      color: white;
+      font-size: 18px; }
     .select-deck-component .deck-item .deck-description {
+      padding: 10px;
       font-size: 12px;
       text-align: left; }
     .select-deck-component .deck-item .deck-footer {
+      padding: 10px;
       font-size: 8px;
       display: flex;
       flex-direction: row;
@@ -375,5 +374,46 @@ a {
     box-shadow: #585858 2px 2px 10px;
     display: flex;
     flex-direction: column; }
+
+.flash-card-component {
+  position: relative;
+  padding-top: 30px;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #12181d;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center; }
+  .flash-card-component .flash-card {
+    height: 60%;
+    position: relative;
+    background: white;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+    .flash-card-component .flash-card .prev {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      left: 0; }
+      .flash-card-component .flash-card .prev .icon {
+        fill: #a146ff;
+        width: 64px;
+        opacity: .3; }
+    .flash-card-component .flash-card .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      right: 0%; }
+      .flash-card-component .flash-card .next .icon {
+        fill: #a146ff;
+        width: 64px;
+        opacity: .3; }
 
 /*# sourceMappingURL=index.css.map */

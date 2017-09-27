@@ -9,6 +9,7 @@ import {loadGapi} from '../services/gapi.service';
 import {SplashComponent} from './splash.component';
 import {CreateDeckComponent} from '../decks/create-deck.component';
 import {SelectDeckComponent} from '../decks/select-deck.component';
+import {FlashCardComponent} from '../flash-cards/flash-card.component';
 
 class App extends React.Component {
 	public state: RecallState;
@@ -37,9 +38,7 @@ class App extends React.Component {
 			<div className={'top-toolbar'}>
 				<NavbarComponent signedIn={this.state.signedIn} />
 			</div>
-			<div className={'center-row'}>
-				{routes}
-			</div>
+			{routes}
 		</div>
 	);
 
@@ -67,6 +66,12 @@ class App extends React.Component {
 				path={'/create-deck'}
 				render={() => {
 					return <CreateDeckComponent />
+				}}
+			/>
+			<Route
+				path={'/flash-cards'}
+				render={() => {
+					return <FlashCardComponent />
 				}}
 			/>
 		</div>

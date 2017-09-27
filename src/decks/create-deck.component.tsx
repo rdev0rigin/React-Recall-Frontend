@@ -5,7 +5,7 @@ import {createDeck, getDecks, updateDeck} from '../services/decks.service';
 import {FlashCardDeck, NewCard, NewDeck} from '../models/decks.model';
 import {EditableCardComponent} from './editable-card.component';
 import {EditableDeckComponent} from './editable-deck.component';
-import {plusIcon} from '../assets/icons/plus';
+import {plusIcon} from '../assets/icons';
 
 const initialState = {
 	dataReady: false,
@@ -87,7 +87,6 @@ export class CreateDeckComponent extends React.Component {
 			};
 
 			createDeck(newDeckData).subscribe(deck => {
-				console.log('new deck', deck);
 				this.setState({formData: deck})
 			});
 		}
@@ -108,7 +107,6 @@ export class CreateDeckComponent extends React.Component {
 	};
 
 	private deckHandler(value: {title: string, description: string}): any {
-		console.log('new value', value, this.state.formData);
 		this.setState({
 			formData: {
 				...this.state.formData,
@@ -131,7 +129,6 @@ export class CreateDeckComponent extends React.Component {
 
 	private deckDescriptionHandler(event): any {
 		const newValue = event.target.value;
-		console.log('formData', {...this.state.formData});
 		this.setState(
 			{
 				formData: {

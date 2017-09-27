@@ -42,37 +42,25 @@ a {
   color: #585858;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  //height: 100vh;
+  justify-content: flex-start;
+  height: 100%;
   width: 100vw;
 
   .top-toolbar {
     background: $menu-background;
+    position: absolute;
     width: 100vw;
     height: 100px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    z-index: 9;
   }
 
-  .center-row {
-    display: flex;
-    flex-direction: row;
-    padding-bottom: 100px;
-
-    .main-display {
-      height: auto;
-      width: 100%;
-      margin-top: 50px;
-    }
+  .main-display {
+    padding-top: 100px;
+    height: 100%;
+    width: 100%;
   }
 
-  .footer {
-    background: $menu-background;
-    box-shadow: -7px -7px 22px lightgray;
-    position: fixed;
-    bottom: 0;
-    height: 100px;
-    width: 100vw;
-  }
 }
