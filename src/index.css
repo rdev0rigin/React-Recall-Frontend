@@ -11,6 +11,14 @@ body, #root {
   width: 100vw;
   font-family: sans-serif; }
 
+.center-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto; }
+
 button {
   background: #4e5eff;
   border: none;
@@ -377,17 +385,14 @@ a {
 
 .flash-card-component {
   position: relative;
-  padding-top: 30px;
+  padding-top: 50px;
   height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #12181d;
+  width: 100%;
+  background: #2a292f;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center; }
+  align-content: center; }
   .flash-card-component .flash-card {
     height: 60%;
     position: relative;
@@ -415,5 +420,101 @@ a {
         fill: #a146ff;
         width: 64px;
         opacity: .3; }
+
+.matching-component {
+  background: #2a292f;
+  height: auto;
+  min-height: 100%;
+  padding: 50px 0 0 0; }
+  .matching-component .win-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 11; }
+    .matching-component .win-modal .message-container {
+      color: black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      height: 400px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between; }
+    .matching-component .win-modal .trophy-box {
+      background: #4e5eff;
+      width: 100%;
+      display: flex;
+      flex-basis: 60%;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%; }
+      .matching-component .win-modal .trophy-box .icon {
+        fill: white;
+        width: 300px;
+        height: 245px;
+        position: absolute;
+        top: 0;
+        bottom: 134px;
+        right: 0px;
+        left: 0px;
+        margin: auto; }
+    .matching-component .win-modal .close-container {
+      position: absolute;
+      right: 7px;
+      top: 3px; }
+      .matching-component .win-modal .close-container .icon {
+        width: 22px; }
+    .matching-component .win-modal .text-box {
+      color: orange;
+      background: white;
+      font-size: 49px;
+      font-weight: 800;
+      flex-basis: 20%;
+      text-align: center;
+      align-content: center;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0px 0 13px 0; }
+    .matching-component .win-modal .buttons-box {
+      cursor: pointer;
+      background: #a146ff;
+      font-size: 28px;
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 40%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      color: white;
+      flex-basis: 20%; }
+  .matching-component .matching-table {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .matching-component .matching-table .card {
+      margin: 30px;
+      width: 300px;
+      height: 200px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .matching-component .matching-table .card.held {
+        background: #4e5eff;
+        color: white; }
+      .matching-component .matching-table .card.matched {
+        opacity: .3; }
+      .matching-component .matching-table .card .text {
+        text-align: center; }
 
 /*# sourceMappingURL=index.css.map */

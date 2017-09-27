@@ -2,29 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a2eea285-05d7-4468-ab74-b8a5a9947632" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/assets/icons.tsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/flash-cards/flash-card.component.tsx" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/flash-cards/flash-card.style.scss" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/edit.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/exit.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/minus.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/play.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/plus.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/profile.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/stack.tsx" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/assets/icons/user.tsx" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/matching/matching.component.tsx" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/matching/matching.style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/679c2c32c5ef562b90d06313c7f432a1f73f08b4/index.scssc" afterPath="$PROJECT_DIR$/.sass-cache/679c2c32c5ef562b90d06313c7f432a1f73f08b4/index.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/9a3d79f719c916af25b6a198da97bfed3db9b91a/app.style.scssc" afterPath="$PROJECT_DIR$/.sass-cache/9a3d79f719c916af25b6a198da97bfed3db9b91a/app.style.scssc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/decks/create-deck.component.tsx" afterPath="$PROJECT_DIR$/src/decks/create-deck.component.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/decks/select-deck.style.scss" afterPath="$PROJECT_DIR$/src/decks/select-deck.style.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/assets/icons.tsx" afterPath="$PROJECT_DIR$/src/assets/icons.tsx" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/flash-cards/flash-card.style.scss" afterPath="$PROJECT_DIR$/src/flash-cards/flash-card.style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css" afterPath="$PROJECT_DIR$/src/index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.css.map" afterPath="$PROJECT_DIR$/src/index.css.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/index.scss" afterPath="$PROJECT_DIR$/src/index.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/App.tsx" afterPath="$PROJECT_DIR$/src/main/App.tsx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/app.style.scss" afterPath="$PROJECT_DIR$/src/main/app.style.scss" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navbar/navbar.component.tsx" afterPath="$PROJECT_DIR$/src/navbar/navbar.component.tsx" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/navbar/navbar.style.scss" afterPath="$PROJECT_DIR$/src/navbar/navbar.style.scss" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,14 +27,14 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.42587832">
+    <splitter split-orientation="horizontal" split-proportion="0.6203942">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-          <file leaf-file-name="create-deck.component.tsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="create-deck.component.tsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/decks/create-deck.component.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="1335">
-                  <caret line="89" column="25" lean-forward="false" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+                <state relative-caret-position="-551">
+                  <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -55,8 +45,8 @@
           <file leaf-file-name="App.tsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/App.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="129">
-                  <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
+                <state relative-caret-position="237">
+                  <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -79,8 +69,8 @@
           <file leaf-file-name="index.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/index.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="135">
-                  <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
+                <state relative-caret-position="225">
+                  <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -89,8 +79,20 @@
           <file leaf-file-name="navbar.component.tsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/navbar/navbar.component.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="715">
-                  <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
+                <state relative-caret-position="199">
+                  <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="matching.component.tsx" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/matching/matching.component.tsx">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="284">
+                  <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
                   <folding>
                     <element signature="e#0#31#0" expanded="true" />
                   </folding>
@@ -101,8 +103,8 @@
           <file leaf-file-name="icons.tsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/assets/icons.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="450">
-                  <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
+                <state relative-caret-position="487">
+                  <caret line="81" column="11" lean-forward="false" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
                   <folding />
                 </state>
               </provider>
@@ -122,12 +124,14 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="select-deck.component.tsx" pinned="false" current-in-tab="true">
+          <file leaf-file-name="select-deck.component.tsx" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/decks/select-deck.component.tsx">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="75">
-                  <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
-                  <folding />
+                <state relative-caret-position="-60">
+                  <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#0#31#0" expanded="true" />
+                  </folding>
                 </state>
               </provider>
             </entry>
@@ -135,8 +139,8 @@
           <file leaf-file-name="create-deck.style.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/decks/create-deck.style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="332">
-                  <caret line="25" column="19" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="25" selection-end-column="19" />
+                <state relative-caret-position="255">
+                  <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
                   <folding />
                 </state>
               </provider>
@@ -145,8 +149,8 @@
           <file leaf-file-name="app.style.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/main/app.style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="248">
-                  <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
+                <state relative-caret-position="90">
+                  <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -156,7 +160,7 @@
             <entry file="file://$PROJECT_DIR$/src/decks/select-deck.style.scss">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
-                  <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+                  <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
                   <folding />
                 </state>
               </provider>
@@ -165,8 +169,18 @@
           <file leaf-file-name="flash-card.style.scss" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/src/flash-cards/flash-card.style.scss">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="308">
-                  <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
+                <state relative-caret-position="210">
+                  <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="matching.style.scss" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/matching/matching.style.scss">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="296">
+                  <caret line="72" column="21" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
                   <folding />
                 </state>
               </provider>
@@ -200,8 +214,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/models/user.model.tsx" />
-        <option value="$PROJECT_DIR$/src/main/App.scss" />
         <option value="$PROJECT_DIR$/src/index.tsx" />
         <option value="$PROJECT_DIR$/src/create-deck/deck-list.component.tsx" />
         <option value="$PROJECT_DIR$/src/start-screen/start-screen.component.tsx" />
@@ -241,16 +253,18 @@
         <option value="$PROJECT_DIR$/src/assets/icons/exit.tsx" />
         <option value="$PROJECT_DIR$/src/decks/deck.consts.tsx" />
         <option value="$PROJECT_DIR$/src/decks/create-deck.style.scss" />
-        <option value="$PROJECT_DIR$/src/assets/icons.tsx" />
-        <option value="$PROJECT_DIR$/src/navbar/navbar.component.tsx" />
         <option value="$PROJECT_DIR$/src/navbar/navbar.style.scss" />
         <option value="$PROJECT_DIR$/src/decks/select-deck.style.scss" />
-        <option value="$PROJECT_DIR$/src/main/App.tsx" />
-        <option value="$PROJECT_DIR$/src/index.scss" />
-        <option value="$PROJECT_DIR$/src/main/app.style.scss" />
-        <option value="$PROJECT_DIR$/src/flash-cards/flash-card.style.scss" />
         <option value="$PROJECT_DIR$/src/decks/create-deck.component.tsx" />
         <option value="$PROJECT_DIR$/src/flash-cards/flash-card.component.tsx" />
+        <option value="$PROJECT_DIR$/src/navbar/navbar.component.tsx" />
+        <option value="$PROJECT_DIR$/src/main/App.tsx" />
+        <option value="$PROJECT_DIR$/src/main/app.style.scss" />
+        <option value="$PROJECT_DIR$/src/flash-cards/flash-card.style.scss" />
+        <option value="$PROJECT_DIR$/src/index.scss" />
+        <option value="$PROJECT_DIR$/src/assets/icons.tsx" />
+        <option value="$PROJECT_DIR$/src/matching/matching.style.scss" />
+        <option value="$PROJECT_DIR$/src/matching/matching.component.tsx" />
       </list>
     </option>
   </component>
@@ -313,7 +327,19 @@
               <item name="recall-2" type="b2602c69:ProjectViewProjectNode" />
               <item name="recall-2" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="flash-cards" type="462c0819:PsiDirectoryNode" />
+              <item name="forms" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recall-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recall-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="recall-2" type="b2602c69:ProjectViewProjectNode" />
+              <item name="recall-2" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="matching" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="recall-2" type="b2602c69:ProjectViewProjectNode" />
@@ -339,7 +365,7 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.tslint" value="$PROJECT_DIR$/node_modules/tslint" />
     <property name="settings.editor.selected.configurable" value="watcher.settings" />
-    <property name="SearchEverywhereHistoryKey" value="ap&#9;FILE&#9;file:///Users/raven/dev0/recall-2/src/main/App.tsx&#10;app&#9;FILE&#9;file:///Users/raven/dev0/recall-2/src/main/App.tsx&#10;navba&#9;null&#9;null&#10;na&#9;null&#9;null" />
+    <property name="SearchEverywhereHistoryKey" value="app&#9;FILE&#9;file:///Users/raven/dev0/recall-2/src/main/app.style.scss&#10;ap&#9;FILE&#9;file:///Users/raven/dev0/recall-2/src/main/App.tsx&#10;navba&#9;null&#9;null&#10;na&#9;null&#9;null" />
     <property name="add_unversioned_files" value="true" />
   </component>
   <component name="RecentsManager">
@@ -380,12 +406,12 @@
       <workItem from="1505572901775" duration="42587000" />
       <workItem from="1505867930212" duration="29321000" />
       <workItem from="1505955826042" duration="46390000" />
-      <workItem from="1506285718278" duration="59815000" />
+      <workItem from="1506285718278" duration="79110000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="178113000" />
+    <option name="totallyTimeSpent" value="197408000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -442,24 +468,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/index.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#31#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/app.actions.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="7" lean-forward="false" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/splash.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -497,8 +505,8 @@
         <state relative-caret-position="135">
           <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
           <folding>
-            <element signature="n#!!doc" expanded="true" />
-            <element signature="e#37#68#0" expanded="true" />
+            <element signature="n#!!doc" expanded="false" />
+            <element signature="e#37#68#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -518,14 +526,6 @@
           <folding>
             <element signature="e#0#51#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="1181" column="7" lean-forward="true" selection-start-line="1181" selection-start-column="7" selection-end-line="1181" selection-end-column="7" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -644,7 +644,7 @@
         <state relative-caret-position="-268">
           <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -704,16 +704,8 @@
         <state relative-caret-position="816">
           <caret line="73" column="13" lean-forward="false" selection-start-line="73" selection-start-column="13" selection-end-line="73" selection-end-column="13" />
           <folding>
-            <element signature="e#0#31#0" expanded="true" />
+            <element signature="e#0#31#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/decks/create-deck.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="25" column="19" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="25" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -781,78 +773,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assets/icons.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="450">
-          <caret line="71" column="11" lean-forward="false" selection-start-line="71" selection-start-column="11" selection-end-line="71" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/navbar/navbar.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="715">
-          <caret line="86" column="35" lean-forward="false" selection-start-line="86" selection-start-column="35" selection-end-line="86" selection-end-column="35" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/navbar/navbar.style.scss">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="14" lean-forward="false" selection-start-line="5" selection-start-column="14" selection-end-line="5" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/decks/select-deck.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="18" lean-forward="true" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/App.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="129">
-          <caret line="40" column="12" lean-forward="false" selection-start-line="40" selection-start-column="12" selection-end-line="40" selection-end-column="12" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/index.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="12" lean-forward="true" selection-start-line="9" selection-start-column="12" selection-end-line="9" selection-end-column="12" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/app.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="50" column="23" lean-forward="false" selection-start-line="50" selection-start-column="23" selection-end-line="50" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/flash-cards/flash-card.style.scss">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="28" column="14" lean-forward="true" selection-start-line="28" selection-start-column="14" selection-end-line="28" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/decks/select-deck.component.tsx">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="8" lean-forward="false" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
           <folding />
         </state>
       </provider>
@@ -869,8 +793,112 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/decks/create-deck.component.tsx">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1335">
-          <caret line="89" column="25" lean-forward="false" selection-start-line="89" selection-start-column="25" selection-end-line="89" selection-end-column="25" />
+        <state relative-caret-position="-551">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/App.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="237">
+          <caret line="80" column="33" lean-forward="true" selection-start-line="80" selection-start-column="33" selection-end-line="80" selection-end-column="33" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external/lib.es6.d.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="175">
+          <caret line="600" column="24" lean-forward="false" selection-start-line="600" selection-start-column="24" selection-end-line="600" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/navbar/navbar.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/create-deck.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="16" lean-forward="false" selection-start-line="17" selection-start-column="16" selection-end-line="17" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/select-deck.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-60">
+          <caret line="40" column="32" lean-forward="false" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="e#0#31#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/app.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="0" lean-forward="true" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/decks/select-deck.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="18" lean-forward="false" selection-start-line="3" selection-start-column="18" selection-end-line="3" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/flash-cards/flash-card.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="5" lean-forward="true" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/index.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="0" lean-forward="true" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/assets/icons.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="487">
+          <caret line="81" column="11" lean-forward="false" selection-start-line="81" selection-start-column="11" selection-end-line="81" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matching/matching.style.scss">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="296">
+          <caret line="72" column="21" lean-forward="false" selection-start-line="72" selection-start-column="21" selection-end-line="72" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/matching/matching.component.tsx">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="284">
+          <caret line="117" column="26" lean-forward="true" selection-start-line="117" selection-start-column="26" selection-end-line="117" selection-end-column="26" />
           <folding>
             <element signature="e#0#31#0" expanded="true" />
           </folding>

@@ -14,6 +14,14 @@ body, #root {
   font-family: sans-serif;
 }
 
+.center-screen {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+}
 
 @import './main/app.style';
 @import './navbar/navbar.style';
@@ -23,3 +31,4 @@ body, #root {
 @import './decks/create-deck.style';
 @import './decks/select-deck.style';
 @import './flash-cards/flash-card.style';
+@import './matching/matching.style';

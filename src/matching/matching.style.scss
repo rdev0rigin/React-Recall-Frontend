@@ -1,0 +1,128 @@
+.matching-component {
+  background: $gameboard-background;
+  height: auto;
+  min-height: 100%;
+  padding: 50px 0 0 0;
+
+  .win-modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    z-index: 11;
+    .message-container {
+      color: black;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: 0;
+      margin: auto;
+      height: 400px;
+      width: 350px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .trophy-box {
+      background: $secondary-color;
+      width: 100%;
+      display: flex;
+      flex-basis: 60%;
+      border-top-left-radius: 5%;
+      border-top-right-radius: 5%;
+      .icon {
+        fill: white;
+        width: 300px;
+        height: 245px;
+        position: absolute;
+        top: 0;
+        bottom: 134px;
+        right: 0px;
+        left: 0px;
+        margin: auto;
+      }
+    }
+
+    .close-container {
+      position: absolute;
+      right: 7px;
+      top: 3px;
+      .icon {
+        width: 22px;
+
+      }
+    }
+    .text-box {
+      color: orange;
+      background: white;
+      font-size: 49px;
+      font-weight: 800;
+      flex-basis: 20%;
+      text-align: center;
+      align-content: center;
+      display: flex;
+      flex-direction: column-reverse;
+      padding: 0px 0 13px 0;
+    }
+
+    .buttons-box {
+      cursor: pointer;
+      background: $primary-color;
+      font-size: 28px;
+      border-bottom-left-radius: 40%;
+      border-bottom-right-radius: 40%;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 100%;
+      color: white;
+      flex-basis: 20%;
+    }
+
+
+
+    .icon {
+      //position: absolute;
+      //top: 0;
+      //bottom: 0;
+
+    }
+
+  }
+
+  .matching-table {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    //overflow-y: auto;
+    .card {
+      margin: 30px;
+      width: 300px;
+      height: 200px;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      &.held {
+        background: $secondary-color;
+        color: white;
+      }
+
+      &.matched {
+        opacity: .3;
+      }
+      .text {
+        text-align: center;
+      }
+    }
+  }
+}

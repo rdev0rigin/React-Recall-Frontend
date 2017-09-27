@@ -18,11 +18,6 @@ export class NavbarComponent extends React.Component {
 		super(props);
 	}
 
-	public componentDidMount(): void {
-	}
-
-
-
 	public signOutHandler(e: any): void {
 		e.preventDefault();
 		gapi.auth2.getAuthInstance().signOut();

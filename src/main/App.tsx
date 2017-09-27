@@ -10,6 +10,7 @@ import {SplashComponent} from './splash.component';
 import {CreateDeckComponent} from '../decks/create-deck.component';
 import {SelectDeckComponent} from '../decks/select-deck.component';
 import {FlashCardComponent} from '../flash-cards/flash-card.component';
+import {MatchingComponent} from '../matching/matching.component';
 
 class App extends React.Component {
 	public state: RecallState;
@@ -72,6 +73,12 @@ class App extends React.Component {
 				path={'/flash-cards'}
 				render={() => {
 					return <FlashCardComponent />
+				}}
+			/>
+			<Route
+				path={'/matching'}
+				render={() => {
+					return <MatchingComponent />
 				}}
 			/>
 		</div>

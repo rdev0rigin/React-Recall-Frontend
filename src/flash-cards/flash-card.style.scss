@@ -1,16 +1,13 @@
 .flash-card-component {
   position: relative;
-  padding-top: 30px;
+  padding-top: 50px;
   height: 100%;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: #12181d;
+  width: 100%;
+  background: $gameboard-background;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  text-align: center;
+  align-content: center;
 
   .flash-card {
     height: 60%;
